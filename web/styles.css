@@ -60,7 +60,6 @@
   --sans: "Inter", system-ui, sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, monospace;
   --gutter: clamp(1rem, 0.6rem + 2.2vw, 3rem);
-  --measure: 42rem;
   --radius: 6px;
   --day: 14px;
   /* Whole pixels, so every 1px seam lands on a pixel. */
@@ -157,7 +156,6 @@ main,
 
 .strap {
   margin-top: 0.4rem;
-  max-width: var(--measure);
   color: var(--ink-soft);
   font-size: 1.125rem;
 }
@@ -174,7 +172,6 @@ main {
   background: var(--panel-grey);
   border-radius: var(--radius);
   padding: 1.25rem 1.5rem;
-  max-width: var(--measure);
   overflow-wrap: anywhere;
 }
 
@@ -199,10 +196,6 @@ main {
 .series section > h3 {
   font-size: 1.375rem;
   margin-bottom: 0.75rem;
-}
-
-.prose p {
-  max-width: var(--measure);
 }
 
 .prose p + p {
