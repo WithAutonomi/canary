@@ -1,0 +1,573 @@
+/* Autonomi canary, in the Autonomi brand colours used by try.autonomi.com.
+   Source of truth: github.com/WithAutonomi/brand (private).
+
+   Only the open-licence cuts are self-hosted here: this repository is
+   public, and the brand's Method and FK Roman faces are licensed for use, not
+   for redistribution, so they must not be committed to it. Inter and IBM Plex
+   Mono are OFL (see licenses/). */
+
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/Inter-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/Inter-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url("fonts/IBMPlexMono-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url("fonts/IBMPlexMono-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+
+:root {
+  --ink: #232a59;
+  --ink-soft: rgba(35, 42, 89, 0.8);
+  --rule: rgba(35, 42, 89, 0.18);
+  --paper: #ffffff;
+  --masthead-background: #cfecfb;
+  --page-background: #f7fcff;
+  --panel-grey: #eceff4;
+  --card-shadow: 0 6px 5px rgba(0, 0, 0, 0.04), 0 1px 10px rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.04);
+
+  /* The three cell states, and nothing else in a cell. The red is the
+     brand's red-deep; it is also the only red used outside the grid, for
+     files unavailable now. */
+  --cell-g: #2fbf5b;
+  --cell-r: #e91337;
+  --cell-x: #d9dee6;
+  --cell-hatch: rgba(255, 255, 255, 0.6);
+
+  /* The stale band is the only amber on the page. */
+  --amber: #ffd27a;
+  --amber-edge: #c98a00;
+  --amber-ink: #4a3200;
+
+  --sans: "Inter", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, monospace;
+  --gutter: clamp(1rem, 0.6rem + 2.2vw, 3rem);
+  --measure: 42rem;
+  --radius: 6px;
+  --day: 14px;
+  /* Whole pixels, so every 1px seam lands on a pixel. */
+  --row: 42px;
+  --file-col: 17rem;
+
+  color-scheme: light only;
+  background: var(--page-background);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--page-background);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  line-height: 1.25;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: var(--ink);
+  text-underline-offset: 0.2em;
+  text-decoration-thickness: 1px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+:focus-visible {
+  outline: 2.5px solid var(--ink);
+  outline-offset: 3px;
+}
+
+/* Masthead */
+
+.masthead {
+  background: var(--masthead-background);
+  padding-block: 2rem 1.75rem;
+}
+
+/* One column for header, content and footer, so their edges line up. */
+.masthead-inner,
+main,
+.site-footer {
+  max-width: calc(76rem + 2 * var(--gutter));
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.site-name {
+  font-size: clamp(1.75rem, 1.3rem + 2vw, 2.75rem);
+}
+
+.strap {
+  margin-top: 0.4rem;
+  max-width: var(--measure);
+  color: var(--ink-soft);
+  font-size: 1.125rem;
+}
+
+main {
+  padding-block: 2rem 3rem;
+}
+
+.loading {
+  color: var(--ink-soft);
+}
+
+.panel {
+  background: var(--panel-grey);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+  max-width: var(--measure);
+  overflow-wrap: anywhere;
+}
+
+/* A series */
+
+.series + .series {
+  margin-top: 4rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--rule);
+}
+
+.series-title {
+  font-size: 1.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.series section {
+  margin-top: 2.75rem;
+}
+
+.series section > h2,
+.series section > h3 {
+  font-size: 1.375rem;
+  margin-bottom: 0.75rem;
+}
+
+.prose p {
+  max-width: var(--measure);
+}
+
+.prose p + p {
+  margin-top: 0.85rem;
+}
+
+/* Headline tiles */
+
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.tile {
+  background: var(--paper);
+  border-radius: var(--radius);
+  box-shadow: var(--card-shadow);
+  padding: 1.1rem 1.25rem 1.2rem;
+  min-width: 0;
+}
+
+.tile-figure {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.tile-note {
+  margin-top: 0.4rem;
+  font-size: 0.875rem;
+  color: var(--ink-soft);
+}
+
+.tile-note.unavailable-now {
+  color: var(--cell-r);
+  font-weight: 700;
+}
+
+@media (max-width: 62rem) {
+  .tiles {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 34rem) {
+  .tiles {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* Freshness */
+
+.freshness {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: var(--ink-soft);
+}
+
+.stale-band {
+  margin-top: 1rem;
+  padding: 0.85rem 1.1rem;
+  border-radius: var(--radius);
+  background: var(--amber);
+  border: 1px solid var(--amber-edge);
+  color: var(--amber-ink);
+  font-weight: 700;
+}
+
+/* Per-vantage table */
+
+.table-scroll {
+  overflow-x: auto;
+}
+
+.vantage-table {
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+  min-width: 100%;
+  background: var(--paper);
+  border-radius: var(--radius);
+  box-shadow: var(--card-shadow);
+}
+
+.vantage-table th,
+.vantage-table td {
+  padding: 0.6rem 1rem;
+  text-align: right;
+  white-space: nowrap;
+  border-bottom: 1px solid var(--rule);
+}
+
+.vantage-table th:first-child {
+  text-align: left;
+}
+
+.vantage-table thead th {
+  font-size: 0.8125rem;
+  color: var(--ink-soft);
+}
+
+.vantage-table tbody tr:last-child > * {
+  border-bottom: 0;
+}
+
+.vantage-table td {
+  font-family: var(--mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Calendar */
+
+.calendar-legend {
+  margin-bottom: 0.75rem;
+  font-size: 0.875rem;
+}
+
+.legend-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1.5rem;
+  margin: 0 0 0.35rem;
+  padding: 0;
+  list-style: none;
+}
+
+.legend-items li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.legend-note {
+  color: var(--ink-soft);
+}
+
+.swatch {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 2px;
+}
+
+.swatch.g,
+.cell.g {
+  background: var(--cell-g);
+}
+
+.swatch.r,
+.cell.r {
+  background-color: var(--cell-r);
+  /* A hatch, so an unavailable day reads without colour. */
+  background-image: repeating-linear-gradient(135deg, transparent 0 2px, var(--cell-hatch) 2px 3.5px);
+}
+
+.swatch.x,
+.cell.x {
+  background: var(--cell-x);
+}
+
+.calendar-scroll {
+  overflow: auto;
+  max-height: 75vh;
+  max-width: 100%;
+  background: var(--paper);
+  border-radius: var(--radius);
+  box-shadow: var(--card-shadow);
+  overscroll-behavior-x: contain;
+}
+
+.calendar {
+  width: calc(var(--file-col) + var(--days, 0) * var(--day));
+}
+
+.cal-row {
+  display: flex;
+  height: var(--row);
+}
+
+/* Off-screen rows skip layout and paint until scrolled to. */
+.cal-body .cal-row {
+  content-visibility: auto;
+  contain-intrinsic-size: auto var(--row);
+}
+
+/* The header row is sticky as a whole, so a month label can run across the
+   day columns after it without those cells painting over it. */
+.cal-head {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background: var(--paper);
+  border-bottom: 1px solid var(--rule);
+}
+
+.cal-head .cal-row {
+  height: 1.9rem;
+  font-size: 0.6875rem;
+  color: var(--ink-soft);
+}
+
+.calendar .file-col,
+.calendar .file {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  flex: none;
+  width: var(--file-col);
+  background: var(--paper);
+  border-right: 1px solid var(--rule);
+}
+
+.calendar .file-col {
+  z-index: 4;
+  align-self: stretch;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 0.75rem 0.25rem;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.calendar .day {
+  position: relative;
+  flex: none;
+  width: var(--day);
+}
+
+.calendar .month {
+  position: absolute;
+  left: 1px;
+  bottom: 0.25rem;
+  white-space: nowrap;
+  border-left: 1px solid var(--rule);
+  padding-left: 3px;
+  line-height: 1;
+}
+
+.calendar .file {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  padding: 0.2rem 0.75rem;
+  line-height: 1.25;
+  border-bottom: 1px solid var(--rule);
+}
+
+.file-name {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 0.8125rem;
+  font-weight: 700;
+}
+
+.file-meta {
+  display: flex;
+  gap: 0.6rem;
+  font-size: 0.6875rem;
+  color: var(--ink-soft);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.file-size {
+  font-family: var(--mono);
+}
+
+.cell {
+  display: block;
+  flex: none;
+  width: var(--day);
+  height: 100%;
+  /* White seams between days and rows, painted outside the state colour. */
+  border-right: 1px solid var(--paper);
+  border-bottom: 1px solid var(--paper);
+}
+
+@media (max-width: 40rem) {
+  :root {
+    --day: 8px;
+    --file-col: 9.5rem;
+    --row: 60px;
+  }
+
+  /* Size and source on one line, the browser link on the next. */
+  .file-meta {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0 0.5rem;
+    line-height: 1.35;
+  }
+
+  .file-meta .try-link {
+    grid-column: 1 / -1;
+    order: 3;
+  }
+
+  .calendar .file {
+    padding-inline: 0.5rem;
+  }
+
+  .cell {
+    border-right-width: 0;
+    box-shadow: inset -1px 0 0 rgba(255, 255, 255, 0.5);
+  }
+}
+
+/* Check for yourself */
+
+.button {
+  font: inherit;
+  font-weight: 700;
+  font-size: 0.9375rem;
+  cursor: pointer;
+  border: 0;
+  border-radius: var(--radius);
+  min-height: 40px;
+  padding: 0.5rem 1rem;
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.button:hover {
+  background: var(--paper);
+  color: var(--ink);
+  box-shadow: inset 0 0 0 1px var(--ink);
+}
+
+@media (pointer: coarse) {
+  .button {
+    min-height: 44px;
+  }
+}
+
+.command {
+  margin: 1rem 0 0;
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius);
+  background: var(--ink);
+  color: var(--paper);
+  font-family: var(--mono);
+  font-size: 0.8125rem;
+  line-height: 1.5;
+}
+
+.method strong {
+  font-weight: 700;
+}
+
+/* Footer */
+
+.site-footer {
+  padding-block: 1.5rem 2.5rem;
+  border-top: 1px solid var(--rule);
+  font-size: 0.875rem;
+  color: var(--ink-soft);
+  overflow-wrap: anywhere;
+}
+
+.site-footer p + p {
+  margin-top: 0.25rem;
+}

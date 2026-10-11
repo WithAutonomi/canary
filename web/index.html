@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self'; media-src 'self'; connect-src 'self' https://autonomi-canary-data.s3.eu-west-2.amazonaws.com; base-uri 'none'; form-action 'none'; object-src 'none'; frame-src 'none'; worker-src 'self'; manifest-src 'none'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="color-scheme" content="light">
+  <title>Autonomi canary</title>
+  <meta name="description" content="Public files uploaded to the Autonomi network, checked every hour from three continents. Every check, every day, and how to check for yourself.">
+  <link rel="preload" href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/IBMPlexMono-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/IBMPlexMono-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <meta name="theme-color" content="#cfecfb">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <header class="masthead">
+    <div class="masthead-inner">
+      <h1 class="site-name">Autonomi canary</h1>
+      <p class="strap">Public files uploaded to the Autonomi network, checked every hour from three continents.</p>
+    </div>
+  </header>
+
+  <main id="content" aria-busy="true">
+    <p class="loading" id="loading">Loading the canary data&hellip;</p>
+    <noscript><p class="panel">This page needs JavaScript to read its data. You can fetch the data directly from <a href="data-source.json">data-source.json</a>.</p></noscript>
+
+    <div class="panel error-panel" id="error" role="alert" hidden>
+      <p>The canary data could not be loaded. The files may be fine; this page could not reach its data. Try again later, or fetch the data directly: <a id="error-url" href="data-source.json">data-source.json</a>.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer" id="footer" hidden>
+    <p>Data: <a id="data-url" href="#"></a></p>
+    <p>Schema version <span id="schema-version"></span></p>
+    <p><a href="https://github.com/WithAutonomi/canary">Source code for this page</a> &middot; <a href="licenses/README.txt">Third-party licences</a></p>
+  </footer>
+
+  <template id="series-template">
+    <section class="series">
+      <h2 class="series-title" data-slot="title" hidden></h2>
+
+      <div class="tiles">
+        <div class="tile">
+          <p class="tile-figure"><span data-slot="files"></span> files uploaded</p>
+          <p class="tile-note"><span data-slot="smallest"></span> to <span data-slot="largest"></span>, <span data-slot="bytes"></span> in all, uploaded <span data-slot="uploaded-from"></span> to <span data-slot="uploaded-to"></span></p>
+        </div>
+        <div class="tile">
+          <p class="tile-figure"><span data-slot="days-observed"></span> days observed</p>
+          <p class="tile-note">checked from <span data-slot="vantages"></span></p>
+        </div>
+        <div class="tile">
+          <p class="tile-figure"><span data-slot="never-unavailable"></span> of <span data-slot="files"></span> files never unavailable</p>
+          <p class="tile-note unavailable-now" data-slot="unavailable-now" hidden></p>
+        </div>
+        <div class="tile">
+          <p class="tile-figure" data-slot="rate-all"></p>
+          <p class="tile-note">last 30 days: <span data-slot="rate-30d"></span>, last 90 days: <span data-slot="rate-90d"></span></p>
+        </div>
+      </div>
+
+      <p class="freshness" data-slot="freshness">Updated <time data-slot="updated"></time>. Newest check: <time data-slot="newest"></time>.</p>
+      <p class="stale-band" data-slot="stale" role="status" hidden>This page is out of date. Its newest check is from <time data-slot="newest"></time> and it was last updated <time data-slot="updated"></time>. The files may be fine; the checker is not reporting.</p>
+
+      <section class="prose" data-section="what">
+        <h3>What this is</h3>
+        <p>In <span data-slot="uploaded-month"></span> we uploaded <span data-slot="files"></span> ordinary public files to the Autonomi network and left them there. They are old broadcast recordings and similar material from the Internet Archive, between <span data-slot="smallest"></span> and <span data-slot="largest"></span> each. Since then, computers in <span data-slot="vantages"></span> have each tried to download every one of them, in full, once an hour. This page shows what happened. It is updated once a day.</p>
+        <p>A check is one complete download of one file from one of those locations, using the same client software anyone can use. A check succeeds when the whole file is downloaded. It is not a measurement of speed, and it says nothing about how many copies of the file exist; it answers one question only: could the file be retrieved, from there, at that moment.</p>
+        <p>A failed check is not lost data. Checks fail for reasons that have nothing to do with the file: the checking computer's own connection, a slow node, a timeout. A single failed check is recorded but does not change a day's colour. A file is marked unavailable only when the same location fails to retrieve it twice in a row, an hour apart, both times reporting the same missing piece. If a later check succeeds, the file is marked as recovered and the unavailable period stays in the record.</p>
+      </section>
+
+      <section data-section="vantages">
+        <h3>Checks by location</h3>
+        <div class="table-scroll">
+          <table class="vantage-table">
+            <thead>
+              <tr>
+                <th scope="col">Location</th>
+                <th scope="col">Successful checks</th>
+                <th scope="col">Failed checks</th>
+                <th scope="col">Rate (all time)</th>
+                <th scope="col">Rate (30 days)</th>
+                <th scope="col">Rate (90 days)</th>
+              </tr>
+            </thead>
+            <tbody data-slot="vantage-rows"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section data-section="calendar">
+        <h3 data-slot="calendar-heading">Every file, every day</h3>
+        <div data-slot="calendar"></div>
+      </section>
+
+      <section class="prose" data-section="check">
+        <h3>Check for yourself</h3>
+        <p>Every file here is public and its address is listed. You can retrieve any of them with the Autonomi command-line client, or open one in your browser: the browser link fetches the file over the real network from your own machine, through <a href="https://try.autonomi.com/">try.autonomi.com</a>, with nothing of ours in between.</p>
+        <p><button type="button" class="button" data-slot="csv">Download the file list</button></p>
+        <pre class="command"><code data-slot="command"></code></pre>
+      </section>
+
+      <section class="prose method" data-section="method">
+        <h3>How to read this</h3>
+        <p><strong>Days.</strong> Days are UTC. A day is green when every check of the file that day succeeded; red when the file was in a confirmed unavailable period at any point in the day; grey when no checks were recorded that day, which usually means the checking computers were not running.</p>
+        <p><strong>The success rate</strong> is successful checks divided by successful plus failed checks. A small number of checks are neither: the download timed out or the checker could not interpret the result, so the check says nothing either way and is left out of the rate. The count of those is in the data file linked at the bottom of the page.</p>
+        <p><strong>Confirmed unavailable</strong> means two consecutive checks from the same location, an hour apart, both failed because the same piece of the file could not be found by the nodes responsible for it. One failure is never enough.</p>
+        <p><strong>What is not measured here.</strong> How many copies of each file exist on the network; how the network behaves when many people fetch one file at once; how quickly a download starts. Those are measured separately.</p>
+        <p><strong>Where the numbers come from.</strong> The checks are run from virtual machines we operate. Their results are stored in a database and exported once a day to the file linked below, which this page reads. Older versions of that file are kept, so the series cannot be quietly rewritten.</p>
+      </section>
+    </section>
+  </template>
+</body>
+</html>

@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-07T20:00:00Z",
+  "series": [
+    {
+      "id": "prod-canary-04",
+      "kind": "prod-canary",
+      "title": "Canary 4",
+      "path": "prod-canary-04.json",
+      "generated_at": "2026-10-07T20:00:00Z",
+      "data_to": "2026-10-07T18:03:12Z",
+      "stale": true,
+      "summary": {
+        "files": 378,
+        "bytes": 43780194374,
+        "chunks": 13102,
+        "initial_verification_ok": 378,
+        "days_observed": 49,
+        "files_never_unavailable": 375,
+        "files_available_now": 377,
+        "files_unavailable_now": 1,
+        "episodes": {
+          "total": 3,
+          "recovered": 2,
+          "ongoing": 1
+        },
+        "smallest_bytes": 5277908,
+        "largest_bytes": 485255912
+      }
+    }
+  ]
+}

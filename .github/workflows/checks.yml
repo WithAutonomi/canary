@@ -1,0 +1,54 @@
+# Checks that run on every pull request, so a regression is caught before a
+# merge publishes the site. Nothing here talks to the network: the page tests
+# run against the sample build with its data served from the committed sample.
+name: Checks
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: checks-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  unit:
+    name: Unit, schema and packaging
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    # The same image as the browser job, so every job runs one Node and one
+    # Playwright build.
+    container:
+      image: mcr.microsoft.com/playwright:v1.62.1-noble@sha256:dcc5531e97840b9b5e794f2814476b21571c5124a3fca2267d73041f56e7580e
+      options: --init
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - run: npm ci
+      - run: npm run build:pages
+      - run: npx playwright test --project=unit
+
+  page:
+    name: Page and layout
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    container:
+      image: mcr.microsoft.com/playwright:v1.62.1-noble@sha256:dcc5531e97840b9b5e794f2814476b21571c5124a3fca2267d73041f56e7580e
+      options: --init --ipc=host
+    env:
+      # Firefox refuses to start as root with another user's home.
+      HOME: /root
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - run: npm ci
+      - run: >-
+          npx playwright test
+          --project=chromium --project=firefox --project=webkit --project=phone
+      - if: failure()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: page-test-results
+          path: test-results/
+          retention-days: 14
