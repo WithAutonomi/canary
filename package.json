@@ -1,0 +1,17 @@
+{
+  "name": "autonomi-canary",
+  "private": true,
+  "type": "module",
+  "description": "canary.autonomi.com: public files on the Autonomi network, checked every hour, and the record of every check.",
+  "scripts": {
+    "build:pages": "node scripts/package-site.mjs --data-source content/data-source.live.json",
+    "build:preview": "node scripts/package-site.mjs --sample",
+    "fonts": "node scripts/copy-fonts.mjs",
+    "sample": "node scripts/make-sample.mjs",
+    "serve": "node scripts/serve.mjs",
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.62.1"
+  }
+}

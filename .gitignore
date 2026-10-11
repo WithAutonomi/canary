@@ -1,0 +1,16 @@
+node_modules/
+test-results/
+playwright-report/
+
+# Only the four open-licence webfont cuts belong in this public repository.
+web/fonts/*
+!web/fonts/Inter-Regular.woff2
+!web/fonts/Inter-Bold.woff2
+!web/fonts/IBMPlexMono-Regular.woff2
+!web/fonts/IBMPlexMono-Medium.woff2
+
+# Explicitly assembled deployment output, not source.
+dist/
+dist-*/
+
+.DS_Store
