@@ -173,13 +173,16 @@ to its own origin and that bucket.
 
 **How the page presents it.** Percentages come from `ok` and `failed` and are
 always rounded down, so only a record with no failures at all reads 100%. How
-many decimals they carry is derived rather than chosen: with N conclusive
-checks one check is worth 100/N percent, so the page shows the decimals that
-figure justifies, floored at two and capped at six. One width serves every
-percentage in a series, set by the smallest sample behind any of them, so no
-figure overstates its precision and a column of rates stays aligned. At half
-a million checks that is four decimals; past a million, five. The headline
-rate carries its counts beside it, so it can be checked rather than trusted.
+many decimals they carry follows the sample: with N conclusive checks one
+check is worth 100/N percent, so the page shows the decimals that figure
+justifies, never fewer than four and never more than six. One width serves
+every percentage in a series, set by the smallest sample behind any of them,
+so a column of rates stays aligned. Four is a floor rather than a derivation:
+two decimals report a clean 100% for any shortfall under 0.01%, which is how
+a record with real failures in it came to read 100.00%. Every window the
+canary publishes runs to six figures, where four decimals is earned several
+times over. The headline rate carries its counts beside it, so it can be
+checked rather than trusted.
 
 A grey cell says what it can. Where the day falls before the file's own
 `uploaded_at` the page says the file was not on the network yet; otherwise it

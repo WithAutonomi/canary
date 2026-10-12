@@ -24,10 +24,16 @@ export function formatBytes(n) {
 
 // How precise a success rate is allowed to look. A percentage can only carry
 // as many digits as its sample supports: with N conclusive checks, one check
-// is worth 100/N percent, so anything finer than that is invention. Two
-// decimals is the floor, as everywhere else on the page; six is the ceiling,
-// which a billion checks would earn.
-export const MIN_RATE_DECIMALS = 2;
+// is worth 100/N percent, so anything finer than that is invention. Six
+// decimals is the ceiling, which a billion checks would earn.
+//
+// Four is the floor, and it is a commitment rather than a derivation: two
+// decimals report a clean 100% for any shortfall under 0.01%, which is how a
+// record with real failures in it came to read 100.00%. The canary's windows
+// run to hundreds of thousands of checks, where four decimals is earned
+// several times over; the counts shown beside the headline disclose the
+// sample either way, so a reader can see what the figure rests on.
+export const MIN_RATE_DECIMALS = 4;
 export const MAX_RATE_DECIMALS = 6;
 
 // One width for every percentage in a series, set by the smallest number of

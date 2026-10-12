@@ -148,12 +148,12 @@ test.describe("format", () => {
   test("percentages round down, and never count inconclusive checks", () => {
     expect(percentSucceeded({ ok: 0, failed: 0, inconclusive: 5 })).toBeNull();
     expect(formatRate({ ok: 0, failed: 0, inconclusive: 5 })).toBe("no checks yet");
-    expect(formatRate({ ok: 10, failed: 0, inconclusive: 0 })).toBe("100.00%");
-    expect(formatRate({ ok: 2, failed: 1, inconclusive: 100 })).toBe("66.66%");
-    expect(formatRate({ ok: 0, failed: 3, inconclusive: 0 })).toBe("0.00%");
-    expect(formatRate({ ok: 435559, failed: 2, inconclusive: 13 }, 4)).toBe("99.9995%");
-    expect(formatRate({ ok: 0, failed: 3, inconclusive: 0 }, 4)).toBe("0.0000%");
-    // Two decimals hid this entirely: it used to read 99.99%.
+    expect(formatRate({ ok: 10, failed: 0, inconclusive: 0 })).toBe("100.0000%");
+    expect(formatRate({ ok: 2, failed: 1, inconclusive: 100 })).toBe("66.6666%");
+    expect(formatRate({ ok: 0, failed: 3, inconclusive: 0 })).toBe("0.0000%");
+    expect(formatRate({ ok: 435559, failed: 2, inconclusive: 13 })).toBe("99.9995%");
+    // Two decimals hid this entirely: it used to read 99.99%, and the page no
+    // longer asks for a width that can.
     expect(formatRate({ ok: 435559, failed: 2, inconclusive: 13 }, 2)).toBe("99.99%");
     // Only a record with no failures at all reaches 100.
     expect(formatRate({ ok: 999_999, failed: 1 }, 6)).toBe("99.999900%");
@@ -166,11 +166,12 @@ test.describe("format", () => {
   });
 
   test("decimal places follow the smallest sample behind any rate shown", () => {
-    // One check in N is worth 100/N percent; nothing finer is justified.
-    expect(rateDecimals([])).toBe(2);
-    expect(rateDecimals([{ ok: 0, failed: 0 }])).toBe(2);
-    expect(rateDecimals([{ ok: 100, failed: 0 }])).toBe(2);
-    expect(rateDecimals([{ ok: 9_000, failed: 1_000 }])).toBe(2);
+    // One check in N is worth 100/N percent; nothing finer is justified, and
+    // four is the floor whatever the sample.
+    expect(rateDecimals([])).toBe(4);
+    expect(rateDecimals([{ ok: 0, failed: 0 }])).toBe(4);
+    expect(rateDecimals([{ ok: 100, failed: 0 }])).toBe(4);
+    expect(rateDecimals([{ ok: 9_000, failed: 1_000 }])).toBe(4);
     expect(rateDecimals([{ ok: 435_559, failed: 2 }])).toBe(4);
     expect(rateDecimals([{ ok: 1_000_000, failed: 0 }])).toBe(4);
     expect(rateDecimals([{ ok: 1_000_001, failed: 0 }])).toBe(5);
@@ -178,6 +179,8 @@ test.describe("format", () => {
     expect(rateDecimals([{ ok: 20_000_000, failed: 0 }, { ok: 0, failed: 0 }, { ok: 435_559, failed: 2 }])).toBe(4);
     // Clamped: no amount of data earns a seventh decimal.
     expect(rateDecimals([{ ok: 10 ** 15, failed: 0 }])).toBe(6);
+    // Today's live series: its smallest window alone would ask for three.
+    expect(rateDecimals([{ ok: 444_594, failed: 2 }, { ok: 77_520, failed: 0 }])).toBe(4);
   });
 
   test("the counts behind a rate", () => {
