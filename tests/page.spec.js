@@ -38,8 +38,13 @@ test("tiles, freshness and footer show the sample's numbers", async ({ page }) =
   await expect(tiles.nth(2).locator(".tile-figure")).toHaveText("375 of 378 files never unavailable");
   await expect(tiles.nth(2).locator(".unavailable-now")).toHaveText("1 currently unavailable");
   await expect(tiles.nth(2).locator(".unavailable-now")).toHaveCSS("color", "rgb(233, 19, 55)");
-  await expect(tiles.nth(3).locator(".tile-figure")).toHaveText("99.95% of checks succeeded");
-  await expect(tiles.nth(3).locator(".tile-note")).toHaveText("last 30 days: 99.92%, last 90 days: 99.95%");
+  // Four decimals, and the counts behind them: the smallest window shown rests
+  // on about 250,000 checks, so a fifth decimal would be invention.
+  await expect(tiles.nth(3).locator(".tile-figure")).toHaveText("99.9507% of checks succeeded");
+  await expect(tiles.nth(3).locator(".tile-note")).toHaveText([
+    "600 failed of 1,217,537 conclusive checks",
+    "last 30 days: 99.9197%, last 90 days: 99.9507%",
+  ]);
 
   // The viewer's zone is Europe/London (playwright.config.js).
   await expect(page.locator(".freshness")).toHaveText("Updated 9 Oct 2026, 10:31 BST. Newest check: 9 Oct 2026, 09:03 BST.");
@@ -65,7 +70,13 @@ test("the vantage table has a row per location", async ({ page }) => {
   const rows = page.locator(".vantage-table tbody tr");
   await expect(rows).toHaveCount(3);
   await expect(rows.locator("th")).toHaveText(["London", "New York", "Singapore"]);
-  await expect(rows.nth(0).locator("td")).toHaveText(["423,791", "199", "99.95%", "99.92%", "99.95%"]);
+  await expect(rows.nth(0).locator("td")).toHaveText(["405,647", "199", "99.9509%", "99.9202%", "99.9509%"]);
+  // Every rate in the series shares one width, so the columns line up.
+  const widths = await rows.locator("td").evaluateAll(cells => cells
+    .map(cell => cell.textContent)
+    .filter(text => text.endsWith("%"))
+    .map(text => text.split(".")[1].length));
+  expect(new Set(widths)).toEqual(new Set([5]));
 });
 
 test("the calendar has a row per file and a column per day", async ({ page }) => {
@@ -93,9 +104,18 @@ test("the calendar has a row per file and a column per day", async ({ page }) =>
   await expectCell(40, "2026-09-12", "g", "2026-09-12: every check succeeded");
   await expectCell(117, "2026-09-24", "r", "2026-09-24: unavailable (1 chunk could not be found by two checks in a row)");
   await expectCell(301, "2026-10-09", "r", "2026-10-09: unavailable (1 chunk could not be found by two checks in a row)");
-  // A second-day upload's first days.
-  await expectCell(252, "2026-08-22", "x", "2026-08-22: no checks");
-  await expectCell(252, "2026-08-24", "x", "2026-08-24: no checks");
+  // A second-day upload's first days: the file was not there on the first,
+  // and the exporter says why it went unchecked on the next two.
+  await expectCell(252, "2026-08-22", "x", "2026-08-22: not yet uploaded (this file went up on 23 August 2026)");
+  await expectCell(252, "2026-08-23", "x", "2026-08-23: no checks (the files uploaded on the second day were not added to the checking schedule until the fourth day)");
+  await expectCell(252, "2026-08-24", "x", "2026-08-24: no checks (the files uploaded on the second day were not added to the checking schedule until the fourth day)");
+  // The gap in the checking itself: grey for every file, with its reason.
+  const maintenance = "no checks (the checking computers were offline for a network maintenance window at our hosting provider)";
+  await expectCell(0, "2026-09-29", "x", `2026-09-29: ${maintenance}`);
+  await expectCell(377, "2026-09-30", "x", `2026-09-30: ${maintenance}`);
+  // A grey day the file's own upload explains, on a day with no gap: the
+  // first-day uploads were checked from the start, so this is the whole set.
+  await expectCell(0, "2026-08-22", "g", "2026-08-22: every check succeeded");
   // Failed checks leave the day green.
   await expectCell(12, "2026-09-03", "g", "2026-09-03: 1 check failed; the file was retrieved again on the next check");
   await expectCell(88, "2026-09-15", "g", "2026-09-15: 2 checks failed; the file was retrieved again on the next check");

@@ -194,6 +194,29 @@ export function validateSeries(value, expectedId) {
   });
   const daySet = new Set(days);
 
+  // Optional: why the record has no checks over a range of days. Absent from
+  // an exporter that does not supply reasons, which is not an error; the page
+  // falls back to saying only that there were no checks.
+  if (value.gaps !== undefined) {
+    const gaps = array(value.gaps, "gaps");
+    if (gaps.length === 0) fail("gaps", "expected absent when empty");
+    gaps.forEach((gap, i) => {
+      const at = `gaps[${i}]`;
+      object(gap, at);
+      const from = date(gap.from, `${at}.from`);
+      if (date(gap.to, `${at}.to`) < from) fail(`${at}.to`, "ends before it starts");
+      string(gap.reason, `${at}.reason`);
+      if (gap.vantages !== undefined) {
+        const ids = array(gap.vantages, `${at}.vantages`);
+        if (ids.length === 0) fail(`${at}.vantages`, "expected absent when empty");
+        ids.forEach((id, j) => {
+          const where = `${at}.vantages[${j}]`;
+          if (!vantageIds.has(string(id, where))) fail(where, `unknown vantage ${id}`);
+        });
+      }
+    });
+  }
+
   const files = array(value.files, "files");
   if (files.length !== totals.files) fail("files", `expected ${totals.files} files, found ${files.length}`);
   files.forEach((file, i) => {

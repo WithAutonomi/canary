@@ -123,6 +123,13 @@ to its own origin and that bucket.
     "by_vantage": { "lon1": { "all": {}, "30d": {}, "90d": {} } }
   },
   "days": ["2026-08-22", "2026-08-23"],
+  "gaps": [
+    {
+      "from": "2026-09-29", "to": "2026-09-30",
+      "reason": "the checking computers were offline for maintenance",
+      "vantages": ["lon1", "nyc1"]
+    }
+  ],
   "files": [
     {
       "id": "6336b4b0-…", "name": "example.avi", "bytes": 36299308, "chunks": 13,
@@ -149,16 +156,39 @@ to its own origin and that bucket.
   shape of `rates.all`.
 * `failed_checks` and `episodes` are absent when empty. An episode's `to` is
   `null` while it is ongoing.
+* `gaps` is optional: why the record has no checks over a range of days. Each
+  entry covers an inclusive range of UTC days and carries the exporter's own
+  words in `reason`; `vantages`, if present, names the vantages the reason
+  applies to, and every id must be one of the series'. Entries may overlap,
+  and all of them are shown. The page reads a reason only where it explains a
+  grey cell, so an entry that never coincides with one is kept but never
+  read. An exporter that supplies no `gaps` is not an error: the page then
+  says only that there were no checks. A reason reads as the continuation of
+  "no checks", so it starts lower case and carries no closing full stop, and
+  it is shown verbatim: the page does not rewrite it.
 * Timestamps are UTC ending in `Z`; dates are `YYYY-MM-DD`; addresses are 64
   lowercase hex characters; `source_url` is http or https.
 * Fields the page does not know are ignored. A change in meaning comes with a
   new `schema_version`, which this page refuses until it is updated.
 
-**How the page presents it.** Percentages are shown to two decimals, rounded
-down, from `ok` and `failed`: one failure in a million checks reads 99.99%,
-never 100.00%. The page is "out of date" (the amber band) when the series says
-`stale`, or its `generated_at` is more than 36 hours before the viewer's clock.
-Times are shown in the viewer's zone; days are UTC, as in the data.
+**How the page presents it.** Percentages come from `ok` and `failed` and are
+always rounded down, so only a record with no failures at all reads 100%. How
+many decimals they carry is derived rather than chosen: with N conclusive
+checks one check is worth 100/N percent, so the page shows the decimals that
+figure justifies, floored at two and capped at six. One width serves every
+percentage in a series, set by the smallest sample behind any of them, so no
+figure overstates its precision and a column of rates stays aligned. At half
+a million checks that is four decimals; past a million, five. The headline
+rate carries its counts beside it, so it can be checked rather than trusted.
+
+A grey cell says what it can. Where the day falls before the file's own
+`uploaded_at` the page says the file was not on the network yet; otherwise it
+shows any `gaps` reason covering that day; failing both, it says only that
+there were no checks.
+
+The page is "out of date" (the amber band) when the series says `stale`, or
+its `generated_at` is more than 36 hours before the viewer's clock. Times are
+shown in the viewer's zone; days are UTC, as in the data.
 
 ## Sample data
 
@@ -167,9 +197,12 @@ runs are byte-identical (a unit test checks the committed copy is current). It
 has 378 files of 5 MB to 485 MB over 49 days from three vantages, and on
 purpose: two recovered episodes (red runs of 2 and 5 days), one ongoing, four
 files with failed checks on green days, three grey days at the start for files
-uploaded on the second day, and one inconclusive check. `content/sample/stale/`
-is the same data marked stale, generated 40 hours before the tests' fixed
-clock. The names and source links are invented and do not resolve.
+uploaded on the second day, a two-day gap in the checking itself (grey for
+every file), and one inconclusive check. Both runs of grey days have a `gaps`
+reason, so every grey cell in the sample can say why it is grey.
+`content/sample/stale/` is the same data marked stale, generated 40 hours
+before the tests' fixed clock. The names and source links are invented and do
+not resolve.
 
 ## Fonts
 
