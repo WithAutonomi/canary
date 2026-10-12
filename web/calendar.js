@@ -1,6 +1,6 @@
 // The calendar: one row per file, one column per UTC day, coloured only by
 // the day's state in the data (G, R or X).
-import { formatBytes, formatDate, plural } from "./format.js";
+import { formatBytes, formatDate, joinList, plural } from "./format.js";
 
 export const TRY_URL = "https://try.autonomi.com/";
 const DAY_MS = 24 * 60 * 60 * 1000;
@@ -26,8 +26,30 @@ export function missingChunks(file, day) {
   return chunks.size;
 }
 
-// The text a cell's title and aria-label carry.
-export function cellTitle(state, day, file) {
+// Why there were no checks, from the gaps the exporter supplies. Each gap
+// covers an inclusive range of UTC days and carries the reason in its own
+// words; more than one can overlap a day, so all of them are reported. A gap
+// naming vantages explains only those, and says so.
+export function gapReasons(gaps, day, vantages = []) {
+  const labels = new Map(vantages.map(vantage => [vantage.id, vantage.label]));
+  const reasons = [];
+  for (const gap of gaps ?? []) {
+    if (day < gap.from || day > gap.to) continue;
+    const named = gap.vantages?.map(id => labels.get(id) ?? id) ?? [];
+    reasons.push(named.length > 0 ? `${joinList(named)}: ${gap.reason}` : gap.reason);
+  }
+  return reasons;
+}
+
+// A grey day before the file's own upload is not a gap in the record: the
+// file was not on the network yet, so there was nothing to check.
+function beforeUpload(file, day) {
+  return typeof file.uploaded_at === "string" && day < file.uploaded_at.slice(0, 10);
+}
+
+// The text a cell's title and aria-label carry. `context` carries what the
+// day's state cannot say on its own: the series' gaps and its vantages.
+export function cellTitle(state, day, file, context = {}) {
   if (state === "G") {
     const failed = file.failed_checks?.[day];
     return failed
@@ -39,7 +61,11 @@ export function cellTitle(state, day, file) {
     const chunks = Math.max(1, missingChunks(file, day));
     return `${day}: unavailable (${plural(chunks, "chunk", "chunks")} could not be found by two checks in a row)`;
   }
-  return `${day}: no checks`;
+  if (beforeUpload(file, day)) {
+    return `${day}: not yet uploaded (this file went up on ${formatDate(file.uploaded_at.slice(0, 10))})`;
+  }
+  const reasons = gapReasons(context.gaps, day, context.vantages);
+  return reasons.length === 0 ? `${day}: no checks` : `${day}: no checks (${reasons.join("; ")})`;
 }
 
 function element(document, tag, attributes = {}, text) {
@@ -114,12 +140,13 @@ export function renderCalendar(document, data, headingId) {
   head.append(headRow);
 
   const body = element(document, "div", { role: "rowgroup", class: "cal-body" });
+  const context = { gaps: data.gaps, vantages: data.series.vantages };
   for (const file of files) {
     const row = element(document, "div", { role: "row", class: "cal-row" });
     row.append(fileHeader(document, file));
     for (let i = 0; i < days.length; i += 1) {
       const state = file.cells[i];
-      const title = cellTitle(state, days[i], file);
+      const title = cellTitle(state, days[i], file, context);
       row.append(element(document, "span", { role: "cell", class: `cell ${STATE_CLASS[state]}`, title, "aria-label": title }));
     }
     body.append(row);

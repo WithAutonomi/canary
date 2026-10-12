@@ -2,8 +2,8 @@
 // before anything is drawn: the page shows every number or none of them.
 import { renderCalendar } from "./calendar.js";
 import {
-  filesCsv, formatBytes, formatCount, formatDate, formatDateTime, formatMonthYear, formatRate,
-  isStale, joinList,
+  filesCsv, formatBytes, formatChecks, formatCount, formatDate, formatDateTime, formatMonthYear,
+  formatRate, isStale, joinList, rateDecimals,
 } from "./format.js";
 import { SCHEMA_VERSION, SchemaError, seriesUrl, validateIndex, validateSeries } from "./schema.js";
 
@@ -104,10 +104,27 @@ function renderSeries(data, position, single) {
     unavailable.textContent = `${formatCount(summary.files_unavailable_now)} currently unavailable`;
     unavailable.hidden = false;
   }
-  const all = formatRate(rates.all);
+  // Every percentage in this series shares one number of decimals, decided by
+  // the smallest sample any of them rests on.
+  const shown = [rates.all, rates["30d"], rates["90d"],
+    ...series.vantages.flatMap(vantage => [
+      rates.by_vantage[vantage.id].all,
+      rates.by_vantage[vantage.id]["30d"],
+      rates.by_vantage[vantage.id]["90d"],
+    ])];
+  const decimals = rateDecimals(shown);
+  const all = formatRate(rates.all, decimals);
   fill(root, "rate-all", rates.all.ok + rates.all.failed === 0 ? all : `${all} of checks succeeded`);
-  fill(root, "rate-30d", formatRate(rates["30d"]));
-  fill(root, "rate-90d", formatRate(rates["90d"]));
+  const counts = formatChecks(rates.all);
+  const countsNote = root.querySelector('[data-slot="rate-counts"]');
+  if (counts === null) {
+    countsNote.remove();
+  } else {
+    countsNote.textContent = counts;
+    countsNote.hidden = false;
+  }
+  fill(root, "rate-30d", formatRate(rates["30d"], decimals));
+  fill(root, "rate-90d", formatRate(rates["90d"], decimals));
 
   const updated = formatDateTime(data.generated_at);
   const newest = formatDateTime(series.data_to);
@@ -131,7 +148,8 @@ function renderSeries(data, position, single) {
     label.textContent = vantage.label;
     row.append(label);
     for (const text of [formatCount(windows.all.ok), formatCount(windows.all.failed),
-      formatRate(windows.all), formatRate(windows["30d"]), formatRate(windows["90d"])]) {
+      formatRate(windows.all, decimals), formatRate(windows["30d"], decimals),
+      formatRate(windows["90d"], decimals)]) {
       const cell = document.createElement("td");
       cell.textContent = text;
       row.append(cell);

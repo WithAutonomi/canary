@@ -46,82 +46,82 @@
   },
   "rates": {
     "all": {
-      "ok": 1271369,
+      "ok": 1216937,
       "failed": 600,
       "inconclusive": 1,
-      "rate": 0.999528
+      "rate": 0.999507
     },
     "30d": {
-      "ok": 798871,
+      "ok": 744439,
       "failed": 598,
       "inconclusive": 1,
-      "rate": 0.999252
+      "rate": 0.999197
     },
     "90d": {
-      "ok": 1271369,
+      "ok": 1216937,
       "failed": 600,
       "inconclusive": 1,
-      "rate": 0.999528
+      "rate": 0.999507
     },
     "by_vantage": {
       "lon1": {
         "all": {
-          "ok": 423791,
+          "ok": 405647,
           "failed": 199,
           "inconclusive": 0,
-          "rate": 0.999531
+          "rate": 0.99951
         },
         "30d": {
-          "ok": 266292,
+          "ok": 248148,
           "failed": 198,
           "inconclusive": 0,
-          "rate": 0.999257
+          "rate": 0.999203
         },
         "90d": {
-          "ok": 423791,
+          "ok": 405647,
           "failed": 199,
           "inconclusive": 0,
-          "rate": 0.999531
+          "rate": 0.99951
         }
       },
       "nyc1": {
         "all": {
-          "ok": 423788,
+          "ok": 405644,
           "failed": 202,
           "inconclusive": 0,
-          "rate": 0.999524
+          "rate": 0.999502
         },
         "30d": {
-          "ok": 266289,
+          "ok": 248145,
           "failed": 201,
           "inconclusive": 0,
-          "rate": 0.999246
+          "rate": 0.999191
         },
         "90d": {
-          "ok": 423788,
+          "ok": 405644,
           "failed": 202,
           "inconclusive": 0,
-          "rate": 0.999524
+          "rate": 0.999502
         }
       },
       "sgp1": {
         "all": {
-          "ok": 423790,
+          "ok": 405646,
           "failed": 199,
           "inconclusive": 1,
-          "rate": 0.999531
+          "rate": 0.99951
         },
         "30d": {
-          "ok": 266290,
+          "ok": 248146,
           "failed": 199,
           "inconclusive": 1,
-          "rate": 0.999253
+          "rate": 0.999199
         },
         "90d": {
-          "ok": 423790,
+          "ok": 405646,
           "failed": 199,
           "inconclusive": 1,
-          "rate": 0.999531
+          "rate": 0.99951
         }
       }
     }
@@ -177,6 +177,18 @@
     "2026-10-08",
     "2026-10-09"
   ],
+  "gaps": [
+    {
+      "from": "2026-08-23",
+      "to": "2026-08-24",
+      "reason": "the files uploaded on the second day were not added to the checking schedule until the fourth day"
+    },
+    {
+      "from": "2026-09-29",
+      "to": "2026-09-30",
+      "reason": "the checking computers were offline for a network maintenance window at our hosting provider"
+    }
+  ],
   "files": [
     {
       "id": "b615fb4b-2987-4059-b3c1-bc52c5cef84f",
@@ -187,7 +199,7 @@
       "source_url": "https://archive.org/download/sample-KQEDSanFrancisco-reels/KQED%20SanFrancisco2%2031.mp4",
       "uploaded_at": "2026-08-22T12:00:42Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "2195ade4-ceba-4820-bfbf-099d7058efcc",
@@ -198,7 +210,7 @@
       "source_url": "https://archive.org/download/sample-WCCOMinneapolis-reels/WCCO%20Minneapolis1%2008.mpg",
       "uploaded_at": "2026-08-22T12:03:16.428Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "ba3a723d-0cb4-4118-95c3-5a6584b7a27b",
@@ -209,7 +221,7 @@
       "source_url": "https://archive.org/download/sample-CBSChicago-reels/CBS%20Chicago1%2059.mp4",
       "uploaded_at": "2026-08-22T12:05:21.857Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "7a43bb69-2df2-46dd-905e-a9624c72c2c8",
@@ -220,7 +232,7 @@
       "source_url": "https://archive.org/download/sample-CBSChicago-reels/CBS%20Chicago2%2026.mp4",
       "uploaded_at": "2026-08-22T12:08:00.285Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "6828718d-5ee7-46fe-b562-45ff10376d4d",
@@ -231,7 +243,7 @@
       "source_url": "https://archive.org/download/sample-CBSChicago-reels/CBS%20Chicago3%2054.mp4",
       "uploaded_at": "2026-08-22T12:09:37.714Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "8bab7d67-bbe0-46f1-8dda-6fd2814b7296",
@@ -242,7 +254,7 @@
       "source_url": "https://archive.org/download/sample-KQEDSanFrancisco-reels/KQED%20SanFrancisco2%2088.mp4",
       "uploaded_at": "2026-08-22T12:11:53.142Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "5a558a89-1027-4bec-b0f8-46ce2f2bc4f6",
@@ -253,7 +265,7 @@
       "source_url": "https://archive.org/download/sample-ABCDenver-reels/ABC%20Denver2%2059.avi",
       "uploaded_at": "2026-08-22T12:14:21.571Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "cdf2c605-542d-46fc-883e-71a819f4b782",
@@ -264,7 +276,7 @@
       "source_url": "https://archive.org/download/sample-NBCAtlanta-reels/NBC%20Atlanta2%2032.avi",
       "uploaded_at": "2026-08-22T12:16:30Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "474e8b08-d896-4361-9dae-3e7ca5afd97a",
@@ -275,7 +287,7 @@
       "source_url": "https://archive.org/download/sample-KTLALosAngeles-reels/KTLA%20LosAngeles3%2091.mp4",
       "uploaded_at": "2026-08-22T12:19:34.428Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "e2ecf1a1-1d4e-4602-abc8-a190d66474e7",
@@ -286,7 +298,7 @@
       "source_url": "https://archive.org/download/sample-WTOPWashington-reels/WTOP%20Washington2%2014.avi",
       "uploaded_at": "2026-08-22T12:21:26.857Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "9d0cb00d-4194-428c-ad8b-b7fcea238eb0",
@@ -297,7 +309,7 @@
       "source_url": "https://archive.org/download/sample-ABCDenver-reels/ABC%20Denver1%2077.mp4",
       "uploaded_at": "2026-08-22T12:24:15.285Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "1bbd53a9-b82b-45d3-896e-24f80b2be55f",
@@ -308,7 +320,7 @@
       "source_url": "https://archive.org/download/sample-CBSChicago-reels/CBS%20Chicago2%2067.avi",
       "uploaded_at": "2026-08-22T12:26:40.714Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "ba2527e8-2dde-4b9f-9fef-7c70ccaa9d66",
@@ -319,7 +331,7 @@
       "source_url": "https://archive.org/download/sample-WTOPWashington-reels/WTOP%20Washington3%2064.avi",
       "uploaded_at": "2026-08-22T12:28:43.142Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG",
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG",
       "failed_checks": {
         "2026-09-03": 1
       }
@@ -333,7 +345,7 @@
       "source_url": "https://archive.org/download/sample-CBSChicago-reels/CBS%20Chicago4%2052.mkv",
       "uploaded_at": "2026-08-22T12:30:55.571Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "62e74b68-b800-473c-8f81-a9a06c4adfb7",
@@ -344,7 +356,7 @@
       "source_url": "https://archive.org/download/sample-WGBHBoston-reels/WGBH%20Boston3%2069.mpg",
       "uploaded_at": "2026-08-22T12:33:59Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "b524cfbc-055d-467d-9846-4003e65b25a3",
@@ -355,7 +367,7 @@
       "source_url": "https://archive.org/download/sample-WTOPWashington-reels/WTOP%20Washington4%2079.avi",
       "uploaded_at": "2026-08-22T12:35:41.428Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "686cafe0-6164-49b1-84b7-00289008bacf",
@@ -366,7 +378,7 @@
       "source_url": "https://archive.org/download/sample-ABCDenver-reels/ABC%20Denver3%2088.mpg",
       "uploaded_at": "2026-08-22T12:37:52.857Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "2c9c2d32-6d64-4df8-a098-b3ff60ea43fb",
@@ -377,7 +389,7 @@
       "source_url": "https://archive.org/download/sample-ABCDenver-reels/ABC%20Denver4%2005.mp4",
       "uploaded_at": "2026-08-22T12:40:05.285Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "10a69caf-6e12-47bf-871e-619605aac62a",
@@ -388,7 +400,7 @@
       "source_url": "https://archive.org/download/sample-NBCAtlanta-reels/NBC%20Atlanta2%2001.mp4",
       "uploaded_at": "2026-08-22T12:43:11.714Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "c567f33a-8ddd-427d-8174-9bcba7b76127",
@@ -399,7 +411,7 @@
       "source_url": "https://archive.org/download/sample-CBSChicago-reels/CBS%20Chicago1%2079.avi",
       "uploaded_at": "2026-08-22T12:45:09.142Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "fee270fa-0886-460c-9881-a54b5948335d",
@@ -410,7 +422,7 @@
       "source_url": "https://archive.org/download/sample-KTLALosAngeles-reels/KTLA%20LosAngeles2%2096.mp4",
       "uploaded_at": "2026-08-22T12:47:54.571Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "1472ff1d-4dd4-46fc-a371-e2cb2ee96ac2",
@@ -421,7 +433,7 @@
       "source_url": "https://archive.org/download/sample-WGBHBoston-reels/WGBH%20Boston1%2053.mp4",
       "uploaded_at": "2026-08-22T12:49:41Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "a40a39f6-750b-450d-a557-6f3013315585",
@@ -432,7 +444,7 @@
       "source_url": "https://archive.org/download/sample-WCCOMinneapolis-reels/WCCO%20Minneapolis3%2098.avi",
       "uploaded_at": "2026-08-22T12:52:33.428Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "e8efefdf-12ce-4dfb-a05f-20184660a481",
@@ -443,7 +455,7 @@
       "source_url": "https://archive.org/download/sample-WTOPWashington-reels/WTOP%20Washington1%2076.avi",
       "uploaded_at": "2026-08-22T12:54:41.857Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "92a2882c-7203-4baa-8151-9cec22f8239a",
@@ -454,7 +466,7 @@
       "source_url": "https://archive.org/download/sample-WGBHBoston-reels/WGBH%20Boston1%2006.mp4",
       "uploaded_at": "2026-08-22T12:56:42.285Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "eef069fb-b969-4012-8904-d52f90e7016d",
@@ -465,7 +477,7 @@
       "source_url": "https://archive.org/download/sample-KHOUHouston-reels/KHOU%20Houston3%2066.mkv",
       "uploaded_at": "2026-08-22T12:59:13.714Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "835be3fb-7094-460f-a0cb-6b69eaf3a257",
@@ -476,7 +488,7 @@
       "source_url": "https://archive.org/download/sample-KQEDSanFrancisco-reels/KQED%20SanFrancisco2%2028.avi",
       "uploaded_at": "2026-08-22T13:02:04.142Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "ea7fcea4-9061-43a3-a368-04ae10724ef2",
@@ -487,7 +499,7 @@
       "source_url": "https://archive.org/download/sample-KQEDSanFrancisco-reels/KQED%20SanFrancisco1%2009.avi",
       "uploaded_at": "2026-08-22T13:03:46.571Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "dcfd5aab-efec-413f-88ba-320723372f84",
@@ -498,7 +510,7 @@
       "source_url": "https://archive.org/download/sample-WCCOMinneapolis-reels/WCCO%20Minneapolis2%2017.mkv",
       "uploaded_at": "2026-08-22T13:06:19Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "0479ea6a-a352-487a-bc90-78f7dd53e663",
@@ -509,7 +521,7 @@
       "source_url": "https://archive.org/download/sample-KHOUHouston-reels/KHOU%20Houston2%2017.mp4",
       "uploaded_at": "2026-08-22T13:09:04.428Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "61f60277-9967-42f3-8ca2-02350c2526d4",
@@ -520,7 +532,7 @@
       "source_url": "https://archive.org/download/sample-WGBHBoston-reels/WGBH%20Boston1%2014.avi",
       "uploaded_at": "2026-08-22T13:10:49.857Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "deb63c1b-d0f5-4fa3-a40f-c94ec01b66e0",
@@ -531,7 +543,7 @@
       "source_url": "https://archive.org/download/sample-WTOPWashington-reels/WTOP%20Washington3%2077.mkv",
       "uploaded_at": "2026-08-22T13:13:13.285Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "6e0f72e6-18d8-40d4-9974-fbfa738e34eb",
@@ -542,7 +554,7 @@
       "source_url": "https://archive.org/download/sample-WGBHBoston-reels/WGBH%20Boston4%2052.mp4",
       "uploaded_at": "2026-08-22T13:16:00.714Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "a2e70e5e-a114-4de9-9eab-813a9e6fa92f",
@@ -553,7 +565,7 @@
       "source_url": "https://archive.org/download/sample-NBCAtlanta-reels/NBC%20Atlanta4%2036.avi",
       "uploaded_at": "2026-08-22T13:18:07.142Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "0ab1c55e-e888-4ed9-91ad-7711f19b8caa",
@@ -564,7 +576,7 @@
       "source_url": "https://archive.org/download/sample-KQEDSanFrancisco-reels/KQED%20SanFrancisco1%2093.mp4",
       "uploaded_at": "2026-08-22T13:20:18.571Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "06376f2d-a293-4e28-9e7b-583d45bae205",
@@ -575,7 +587,7 @@
       "source_url": "https://archive.org/download/sample-NBCAtlanta-reels/NBC%20Atlanta3%2089.mp4",
       "uploaded_at": "2026-08-22T13:22:59Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "3a3c87fc-236c-4b3a-bf00-334a5f964014",
@@ -586,7 +598,7 @@
       "source_url": "https://archive.org/download/sample-KQEDSanFrancisco-reels/KQED%20SanFrancisco1%2002.mpg",
       "uploaded_at": "2026-08-22T13:24:53.428Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "da95078e-a264-4b25-a4d1-d43e7adf70b3",
@@ -597,7 +609,7 @@
       "source_url": "https://archive.org/download/sample-ABCDenver-reels/ABC%20Denver2%2038.avi",
       "uploaded_at": "2026-08-22T13:27:48.857Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "260f153e-94d0-4a02-9ff8-aa0b0aaae40f",
@@ -608,7 +620,7 @@
       "source_url": "https://archive.org/download/sample-KHOUHouston-reels/KHOU%20Houston3%2098.mkv",
       "uploaded_at": "2026-08-22T13:29:58.285Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "f1ccd7bf-2e83-47bd-9a03-e74b83eac6e7",
@@ -619,7 +631,7 @@
       "source_url": "https://archive.org/download/sample-KQEDSanFrancisco-reels/KQED%20SanFrancisco2%2009.mp4",
       "uploaded_at": "2026-08-22T13:32:14.714Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "cb6c86a6-8621-4556-9567-f4a1bcbe695b",
@@ -630,7 +642,7 @@
       "source_url": "https://archive.org/download/sample-KHOUHouston-reels/KHOU%20Houston1%2022.mp4",
       "uploaded_at": "2026-08-22T13:34:31.142Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGRRGGGGGGGGGGGGGGGGGGGGGGGGGGGG",
+      "cells": "GGGGGGGGGGGGGGGGGGGRRGGGGGGGGGGGGGGGGGXXGGGGGGGGG",
       "episodes": [
         {
           "from": "2026-09-10T14:00:00Z",
@@ -648,7 +660,7 @@
       "source_url": "https://archive.org/download/sample-CBSChicago-reels/CBS%20Chicago1%2017.mp4",
       "uploaded_at": "2026-08-22T13:37:06.571Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "bfd4e649-fb95-425f-9364-42db6cc80170",
@@ -659,7 +671,7 @@
       "source_url": "https://archive.org/download/sample-NBCAtlanta-reels/NBC%20Atlanta3%2050.mpg",
       "uploaded_at": "2026-08-22T13:39:04Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "fa06a686-e822-438d-b1d6-46ef171a0c0e",
@@ -670,7 +682,7 @@
       "source_url": "https://archive.org/download/sample-KHOUHouston-reels/KHOU%20Houston2%2092.mp4",
       "uploaded_at": "2026-08-22T13:42:09.428Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "6a968119-982c-4474-9497-fcbdfb5305da",
@@ -681,7 +693,7 @@
       "source_url": "https://archive.org/download/sample-WCCOMinneapolis-reels/WCCO%20Minneapolis2%2092.mp4",
       "uploaded_at": "2026-08-22T13:44:28.857Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "97848cfc-8621-4e0d-8c40-01fe25dcfeb5",
@@ -692,7 +704,7 @@
       "source_url": "https://archive.org/download/sample-KHOUHouston-reels/KHOU%20Houston4%2040.mp4",
       "uploaded_at": "2026-08-22T13:47:01.285Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "6f1e1ef1-cce8-4fc4-a0b4-0deb28aa34cc",
@@ -703,7 +715,7 @@
       "source_url": "https://archive.org/download/sample-KQEDSanFrancisco-reels/KQED%20SanFrancisco2%2077.mp4",
       "uploaded_at": "2026-08-22T13:48:40.714Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "ffe848b8-550c-4d43-b9bc-2162db028cfc",
@@ -714,7 +726,7 @@
       "source_url": "https://archive.org/download/sample-NBCAtlanta-reels/NBC%20Atlanta4%2060.mp4",
       "uploaded_at": "2026-08-22T13:51:45.142Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "72ad86b5-c56c-4e1f-95ab-25fb7d57924b",
@@ -725,7 +737,7 @@
       "source_url": "https://archive.org/download/sample-KHOUHouston-reels/KHOU%20Houston4%2078.mp4",
       "uploaded_at": "2026-08-22T13:53:50.571Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "b2af9f6d-6ded-4cca-94c8-66db0697901e",
@@ -736,7 +748,7 @@
       "source_url": "https://archive.org/download/sample-KQEDSanFrancisco-reels/KQED%20SanFrancisco4%2056.mkv",
       "uploaded_at": "2026-08-22T13:55:40Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "560fe999-208a-414b-ac1f-195007586aa7",
@@ -747,7 +759,7 @@
       "source_url": "https://archive.org/download/sample-WCCOMinneapolis-reels/WCCO%20Minneapolis4%2087.avi",
       "uploaded_at": "2026-08-22T13:58:38.428Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "3f64952a-f330-43e1-b1cc-59847af6f0e0",
@@ -758,7 +770,7 @@
       "source_url": "https://archive.org/download/sample-KHOUHouston-reels/KHOU%20Houston3%2074.avi",
       "uploaded_at": "2026-08-22T14:01:03.857Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "5c49d8cb-665d-4a29-871b-c7d0637f604f",
@@ -769,7 +781,7 @@
       "source_url": "https://archive.org/download/sample-KTLALosAngeles-reels/KTLA%20LosAngeles1%2030.mp4",
       "uploaded_at": "2026-08-22T14:03:26.285Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "d622971c-6963-4f57-8b24-c7fb346bb018",
@@ -780,7 +792,7 @@
       "source_url": "https://archive.org/download/sample-KTLALosAngeles-reels/KTLA%20LosAngeles3%2022.avi",
       "uploaded_at": "2026-08-22T14:05:54.714Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "0eb8e8d9-378c-428a-af96-86d5260b0443",
@@ -791,7 +803,7 @@
       "source_url": "https://archive.org/download/sample-KQEDSanFrancisco-reels/KQED%20SanFrancisco1%2074.mpg",
       "uploaded_at": "2026-08-22T14:07:59.142Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "8fede1b2-67da-4afe-8b43-6d0aefddfba2",
@@ -802,7 +814,7 @@
       "source_url": "https://archive.org/download/sample-WCCOMinneapolis-reels/WCCO%20Minneapolis2%2031.mp4",
       "uploaded_at": "2026-08-22T14:10:28.571Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "2e362297-3f3e-4132-b86b-2472e1b8800b",
@@ -813,7 +825,7 @@
       "source_url": "https://archive.org/download/sample-WTOPWashington-reels/WTOP%20Washington2%2057.mkv",
       "uploaded_at": "2026-08-22T14:12:15Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "b8a07d9f-1285-4e47-9555-a228b7d999f2",
@@ -824,7 +836,7 @@
       "source_url": "https://archive.org/download/sample-WGBHBoston-reels/WGBH%20Boston3%2056.mp4",
       "uploaded_at": "2026-08-22T14:14:44.428Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "1a9db303-25fa-45b1-a975-0ee51f7e3ac2",
@@ -835,7 +847,7 @@
       "source_url": "https://archive.org/download/sample-WGBHBoston-reels/WGBH%20Boston3%2020.mpg",
       "uploaded_at": "2026-08-22T14:16:49.857Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "c3e5cb58-e0f8-4b2c-a949-6ba6b84931c9",
@@ -846,7 +858,7 @@
       "source_url": "https://archive.org/download/sample-CBSChicago-reels/CBS%20Chicago1%2050.avi",
       "uploaded_at": "2026-08-22T14:19:26.285Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "6c23d915-09cb-455b-bd9f-799a157a317c",
@@ -857,7 +869,7 @@
       "source_url": "https://archive.org/download/sample-KQEDSanFrancisco-reels/KQED%20SanFrancisco1%2070.mpg",
       "uploaded_at": "2026-08-22T14:21:59.714Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "f5a32b56-41ef-425d-9eef-5b4308366699",
@@ -868,7 +880,7 @@
       "source_url": "https://archive.org/download/sample-KTLALosAngeles-reels/KTLA%20LosAngeles1%2015.mpg",
       "uploaded_at": "2026-08-22T14:23:51.142Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "0623cee8-038e-42d2-816c-20546c5afb2b",
@@ -879,7 +891,7 @@
       "source_url": "https://archive.org/download/sample-WGBHBoston-reels/WGBH%20Boston2%2011.avi",
       "uploaded_at": "2026-08-22T14:27:01.571Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "372b4999-afe2-4360-b9b3-62f50ad3eedd",
@@ -890,7 +902,7 @@
       "source_url": "https://archive.org/download/sample-CBSChicago-reels/CBS%20Chicago3%2075.mkv",
       "uploaded_at": "2026-08-22T14:29:28Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "2270aa87-ff02-49b7-97a5-206fc1bf2048",
@@ -901,7 +913,7 @@
       "source_url": "https://archive.org/download/sample-KQEDSanFrancisco-reels/KQED%20SanFrancisco2%2057.mp4",
       "uploaded_at": "2026-08-22T14:31:31.428Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "50b8c6fc-82fa-4916-8dc7-f001bb3da618",
@@ -912,7 +924,7 @@
       "source_url": "https://archive.org/download/sample-ABCDenver-reels/ABC%20Denver3%2057.mp4",
       "uploaded_at": "2026-08-22T14:33:45.857Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "d04479a1-9108-4dc2-ae5f-04a9188a8659",
@@ -923,7 +935,7 @@
       "source_url": "https://archive.org/download/sample-KQEDSanFrancisco-reels/KQED%20SanFrancisco2%2039.avi",
       "uploaded_at": "2026-08-22T14:36:31.285Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "ed9ef0f4-d49a-49be-a733-42b5275f24df",
@@ -934,7 +946,7 @@
       "source_url": "https://archive.org/download/sample-NBCAtlanta-reels/NBC%20Atlanta2%2009.mpg",
       "uploaded_at": "2026-08-22T14:38:36.714Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "9a687a87-efdb-4ef0-9657-3c51ca2ab52f",
@@ -945,7 +957,7 @@
       "source_url": "https://archive.org/download/sample-KHOUHouston-reels/KHOU%20Houston3%2025.mp4",
       "uploaded_at": "2026-08-22T14:41:09.142Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "f713b33f-d09f-4d64-a2ad-1551d5490302",
@@ -956,7 +968,7 @@
       "source_url": "https://archive.org/download/sample-NBCAtlanta-reels/NBC%20Atlanta1%2087.mp4",
       "uploaded_at": "2026-08-22T14:42:58.571Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "92c6b735-b2d1-4cb2-9fc6-32e4389a03f8",
@@ -967,7 +979,7 @@
       "source_url": "https://archive.org/download/sample-KHOUHouston-reels/KHOU%20Houston3%2016.avi",
       "uploaded_at": "2026-08-22T14:45:45Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "bd699527-b576-41d9-9c0c-6ef92057258a",
@@ -978,7 +990,7 @@
       "source_url": "https://archive.org/download/sample-KHOUHouston-reels/KHOU%20Houston3%2072.mp4",
       "uploaded_at": "2026-08-22T14:47:51.428Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "e5679f46-0b72-4d87-9391-885b4ecb525f",
@@ -989,7 +1001,7 @@
       "source_url": "https://archive.org/download/sample-ABCDenver-reels/ABC%20Denver2%2072.mp4",
       "uploaded_at": "2026-08-22T14:50:23.857Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "055e2585-24df-4158-a8fa-e21ae632de8e",
@@ -1000,7 +1012,7 @@
       "source_url": "https://archive.org/download/sample-ABCDenver-reels/ABC%20Denver1%2007.mkv",
       "uploaded_at": "2026-08-22T14:52:31.285Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "81f9888b-b97b-4059-9bf1-3e863778ff6d",
@@ -1011,7 +1023,7 @@
       "source_url": "https://archive.org/download/sample-KHOUHouston-reels/KHOU%20Houston4%2026.mp4",
       "uploaded_at": "2026-08-22T14:54:40.714Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "c1c3d98b-279b-4473-a497-0f4467ef34eb",
@@ -1022,7 +1034,7 @@
       "source_url": "https://archive.org/download/sample-WTOPWashington-reels/WTOP%20Washington4%2068.mkv",
       "uploaded_at": "2026-08-22T14:57:38.142Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "e0f8699b-f077-4d42-9e71-003f4ee042bb",
@@ -1033,7 +1045,7 @@
       "source_url": "https://archive.org/download/sample-ABCDenver-reels/ABC%20Denver2%2016.avi",
       "uploaded_at": "2026-08-22T15:00:06.571Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "c06f96a4-2e24-4804-ae53-e60b68f41334",
@@ -1044,7 +1056,7 @@
       "source_url": "https://archive.org/download/sample-ABCDenver-reels/ABC%20Denver4%2069.mp4",
       "uploaded_at": "2026-08-22T15:01:44Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "ff8ac3d4-99ce-4434-96a6-ed02232f4868",
@@ -1055,7 +1067,7 @@
       "source_url": "https://archive.org/download/sample-NBCAtlanta-reels/NBC%20Atlanta2%2082.mkv",
       "uploaded_at": "2026-08-22T15:04:01.428Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "6a9a4a38-063d-49f8-b77c-fa661ac5fd63",
@@ -1066,7 +1078,7 @@
       "source_url": "https://archive.org/download/sample-NBCAtlanta-reels/NBC%20Atlanta1%2042.avi",
       "uploaded_at": "2026-08-22T15:06:39.857Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "a25c2c46-b54c-4147-83f3-2b7020dbe54b",
@@ -1077,7 +1089,7 @@
       "source_url": "https://archive.org/download/sample-KTLALosAngeles-reels/KTLA%20LosAngeles1%2073.avi",
       "uploaded_at": "2026-08-22T15:08:41.285Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "bdd288bf-ca86-4b66-ae58-8e611f5f509e",
@@ -1088,7 +1100,7 @@
       "source_url": "https://archive.org/download/sample-ABCDenver-reels/ABC%20Denver3%2067.mp4",
       "uploaded_at": "2026-08-22T15:11:51.714Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "45d3187d-c464-4ac2-b6f6-1ea24ef59ec9",
@@ -1099,7 +1111,7 @@
       "source_url": "https://archive.org/download/sample-KHOUHouston-reels/KHOU%20Houston2%2014.mp4",
       "uploaded_at": "2026-08-22T15:14:12.142Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "c174dc19-4698-4fdb-b84b-6ad0b2706ee6",
@@ -1110,7 +1122,7 @@
       "source_url": "https://archive.org/download/sample-CBSChicago-reels/CBS%20Chicago1%2095.avi",
       "uploaded_at": "2026-08-22T15:16:30.571Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "314da283-ef05-48ae-a802-5a6c905b0148",
@@ -1121,7 +1133,7 @@
       "source_url": "https://archive.org/download/sample-NBCAtlanta-reels/NBC%20Atlanta2%2085.mpg",
       "uploaded_at": "2026-08-22T15:18:45Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "4af114c3-d66d-4d5e-b10b-4e2e62b924e5",
@@ -1132,7 +1144,7 @@
       "source_url": "https://archive.org/download/sample-WCCOMinneapolis-reels/WCCO%20Minneapolis3%2085.mpg",
       "uploaded_at": "2026-08-22T15:20:35.428Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "d2cd540d-c99f-487a-9f27-7cfa533c6f5a",
@@ -1143,7 +1155,7 @@
       "source_url": "https://archive.org/download/sample-ABCDenver-reels/ABC%20Denver1%2026.mp4",
       "uploaded_at": "2026-08-22T15:22:59.857Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "7fb2a1c8-122b-427f-a280-9da2326dade9",
@@ -1154,7 +1166,7 @@
       "source_url": "https://archive.org/download/sample-ABCDenver-reels/ABC%20Denver2%2094.mp4",
       "uploaded_at": "2026-08-22T15:25:40.285Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "12b90f21-43db-4575-93c7-a260b66ae918",
@@ -1165,7 +1177,7 @@
       "source_url": "https://archive.org/download/sample-WTOPWashington-reels/WTOP%20Washington4%2022.mkv",
       "uploaded_at": "2026-08-22T15:27:48.714Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG",
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG",
       "failed_checks": {
         "2026-09-15": 2
       }
@@ -1179,7 +1191,7 @@
       "source_url": "https://archive.org/download/sample-KTLALosAngeles-reels/KTLA%20LosAngeles1%2019.mp4",
       "uploaded_at": "2026-08-22T15:30:08.142Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "7f433fb2-a816-4c2e-b33c-1d82473b1c50",
@@ -1190,7 +1202,7 @@
       "source_url": "https://archive.org/download/sample-WCCOMinneapolis-reels/WCCO%20Minneapolis4%2096.avi",
       "uploaded_at": "2026-08-22T15:32:39.571Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "ec83f8d4-ba17-439f-9bb6-58c38c04dfce",
@@ -1201,7 +1213,7 @@
       "source_url": "https://archive.org/download/sample-NBCAtlanta-reels/NBC%20Atlanta1%2008.avi",
       "uploaded_at": "2026-08-22T15:34:39Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "9f6a2bca-5175-4e2e-b95e-218e4660976e",
@@ -1212,7 +1224,7 @@
       "source_url": "https://archive.org/download/sample-WTOPWashington-reels/WTOP%20Washington3%2096.avi",
       "uploaded_at": "2026-08-22T15:37:46.428Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "8e3231bb-bd39-47f5-8bc0-9fbab0c7e9ce",
@@ -1223,7 +1235,7 @@
       "source_url": "https://archive.org/download/sample-CBSChicago-reels/CBS%20Chicago4%2026.mp4",
       "uploaded_at": "2026-08-22T15:39:17.857Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "9c839729-99a0-4714-bdff-fd40965b9241",
@@ -1234,7 +1246,7 @@
       "source_url": "https://archive.org/download/sample-WTOPWashington-reels/WTOP%20Washington4%2076.avi",
       "uploaded_at": "2026-08-22T15:42:28.285Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "cc3aa20f-5bd3-45a5-85f6-ee3f9f2952ad",
@@ -1245,7 +1257,7 @@
       "source_url": "https://archive.org/download/sample-KTLALosAngeles-reels/KTLA%20LosAngeles2%2081.avi",
       "uploaded_at": "2026-08-22T15:44:54.714Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "6f471f0c-d174-4eee-9f98-8417b443140b",
@@ -1256,7 +1268,7 @@
       "source_url": "https://archive.org/download/sample-WGBHBoston-reels/WGBH%20Boston2%2020.avi",
       "uploaded_at": "2026-08-22T15:46:25.142Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "085863f5-1686-468c-a90d-e7225eee579b",
@@ -1267,7 +1279,7 @@
       "source_url": "https://archive.org/download/sample-ABCDenver-reels/ABC%20Denver2%2057.avi",
       "uploaded_at": "2026-08-22T15:49:07.571Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "5b123bb2-e99e-4248-beac-91696b330321",
@@ -1278,7 +1290,7 @@
       "source_url": "https://archive.org/download/sample-CBSChicago-reels/CBS%20Chicago4%2073.mp4",
       "uploaded_at": "2026-08-22T15:51:20Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "9d11fe58-9369-4c2d-ad1f-52a23e1b3f06",
@@ -1289,7 +1301,7 @@
       "source_url": "https://archive.org/download/sample-ABCDenver-reels/ABC%20Denver2%2079.avi",
       "uploaded_at": "2026-08-22T15:53:23.428Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "77daaf8a-cf06-4996-8e58-1e779da25261",
@@ -1300,7 +1312,7 @@
       "source_url": "https://archive.org/download/sample-ABCDenver-reels/ABC%20Denver4%2056.mkv",
       "uploaded_at": "2026-08-22T15:55:59.857Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "dc468a01-819e-47b3-81a1-d620f1ccd3aa",
@@ -1311,7 +1323,7 @@
       "source_url": "https://archive.org/download/sample-NBCAtlanta-reels/NBC%20Atlanta2%2039.mp4",
       "uploaded_at": "2026-08-22T15:58:06.285Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "59ba13bc-ab08-40dd-8d87-0af74f0071fa",
@@ -1322,7 +1334,7 @@
       "source_url": "https://archive.org/download/sample-NBCAtlanta-reels/NBC%20Atlanta2%2011.avi",
       "uploaded_at": "2026-08-22T16:00:48.714Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "f3496fc9-d5ae-4dc4-8a6b-2f807d1d8771",
@@ -1333,7 +1345,7 @@
       "source_url": "https://archive.org/download/sample-ABCDenver-reels/ABC%20Denver2%2006.mkv",
       "uploaded_at": "2026-08-22T16:03:09.142Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "bad4f05e-6351-4155-88cc-93cdc9c41889",
@@ -1344,7 +1356,7 @@
       "source_url": "https://archive.org/download/sample-KQEDSanFrancisco-reels/KQED%20SanFrancisco1%2077.avi",
       "uploaded_at": "2026-08-22T16:05:28.571Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "cc4db1d4-6274-41d0-afce-9adce39b3458",
@@ -1355,7 +1367,7 @@
       "source_url": "https://archive.org/download/sample-NBCAtlanta-reels/NBC%20Atlanta2%2035.mpg",
       "uploaded_at": "2026-08-22T16:07:50Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "ae572d96-003a-41e9-be25-0e5a0291ee99",
@@ -1366,7 +1378,7 @@
       "source_url": "https://archive.org/download/sample-KQEDSanFrancisco-reels/KQED%20SanFrancisco1%2081.mp4",
       "uploaded_at": "2026-08-22T16:09:58.428Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "7f7ffaaf-0899-411e-b29c-422862e06437",
@@ -1377,7 +1389,7 @@
       "source_url": "https://archive.org/download/sample-WGBHBoston-reels/WGBH%20Boston2%2074.mp4",
       "uploaded_at": "2026-08-22T16:12:25.857Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "4a4ade4b-1549-41b2-9f84-cd3e12aa88e8",
@@ -1388,7 +1400,7 @@
       "source_url": "https://archive.org/download/sample-KTLALosAngeles-reels/KTLA%20LosAngeles1%2033.mp4",
       "uploaded_at": "2026-08-22T16:14:53.285Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "ef724c47-bbfa-4ce2-b7e8-f2294b948037",
@@ -1399,7 +1411,7 @@
       "source_url": "https://archive.org/download/sample-KTLALosAngeles-reels/KTLA%20LosAngeles1%2038.avi",
       "uploaded_at": "2026-08-22T16:16:59.714Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "b8eb3de7-e0df-4bbe-98e0-1f27aaa0675d",
@@ -1410,7 +1422,7 @@
       "source_url": "https://archive.org/download/sample-CBSChicago-reels/CBS%20Chicago4%2065.avi",
       "uploaded_at": "2026-08-22T16:20:08.142Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "f203929e-cb13-44df-bd03-ad5a5f8c0c7d",
@@ -1421,7 +1433,7 @@
       "source_url": "https://archive.org/download/sample-WCCOMinneapolis-reels/WCCO%20Minneapolis4%2066.avi",
       "uploaded_at": "2026-08-22T16:21:46.571Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "c89a5df0-9859-4f4a-b792-5dc41523a84f",
@@ -1432,7 +1444,7 @@
       "source_url": "https://archive.org/download/sample-ABCDenver-reels/ABC%20Denver1%2059.avi",
       "uploaded_at": "2026-08-22T16:24:50Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "ad8413ad-c610-4e73-abc4-a497c9176dbb",
@@ -1443,7 +1455,7 @@
       "source_url": "https://archive.org/download/sample-CBSChicago-reels/CBS%20Chicago1%2049.mkv",
       "uploaded_at": "2026-08-22T16:27:12.428Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "c64e7c66-bd65-4bfd-aae8-f0cb98fec435",
@@ -1454,7 +1466,7 @@
       "source_url": "https://archive.org/download/sample-KQEDSanFrancisco-reels/KQED%20SanFrancisco3%2071.mpg",
       "uploaded_at": "2026-08-22T16:29:41.857Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "d7d45c67-d2d3-4ab3-97b5-cc604cd94440",
@@ -1465,7 +1477,7 @@
       "source_url": "https://archive.org/download/sample-KTLALosAngeles-reels/KTLA%20LosAngeles4%2013.mp4",
       "uploaded_at": "2026-08-22T16:31:50.285Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "1f05a943-5976-40b8-8726-3d3689191f20",
@@ -1476,7 +1488,7 @@
       "source_url": "https://archive.org/download/sample-ABCDenver-reels/ABC%20Denver3%2099.mp4",
       "uploaded_at": "2026-08-22T16:34:07.714Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "ae9dcea7-35e8-43b1-b6e9-005a81c4398e",
@@ -1487,7 +1499,7 @@
       "source_url": "https://archive.org/download/sample-KTLALosAngeles-reels/KTLA%20LosAngeles1%2038.mkv",
       "uploaded_at": "2026-08-22T16:36:18.142Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGRRRRRGGGGGGGGGGGGGGG",
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGRRRRRGGGGXXGGGGGGGGG",
       "episodes": [
         {
           "from": "2026-09-20T03:00:00Z",
@@ -1505,7 +1517,7 @@
       "source_url": "https://archive.org/download/sample-WCCOMinneapolis-reels/WCCO%20Minneapolis2%2050.mp4",
       "uploaded_at": "2026-08-22T16:38:17.571Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "24b39bd6-6d1a-49f9-810d-6014a75840c4",
@@ -1516,7 +1528,7 @@
       "source_url": "https://archive.org/download/sample-NBCAtlanta-reels/NBC%20Atlanta3%2067.mp4",
       "uploaded_at": "2026-08-22T16:40:43Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "100c468c-8466-48eb-b425-1724175cbf46",
@@ -1527,7 +1539,7 @@
       "source_url": "https://archive.org/download/sample-KQEDSanFrancisco-reels/KQED%20SanFrancisco4%2078.mpg",
       "uploaded_at": "2026-08-22T16:42:54.428Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "dc7e10e8-6980-4209-8565-91b8d44a7231",
@@ -1538,7 +1550,7 @@
       "source_url": "https://archive.org/download/sample-KTLALosAngeles-reels/KTLA%20LosAngeles3%2077.mkv",
       "uploaded_at": "2026-08-22T16:46:06.857Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "f1b92aaa-ff66-4435-a93b-c967b41fc596",
@@ -1549,7 +1561,7 @@
       "source_url": "https://archive.org/download/sample-NBCAtlanta-reels/NBC%20Atlanta3%2044.avi",
       "uploaded_at": "2026-08-22T16:48:04.285Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "55530e1a-c0dd-4f3f-9cf7-2850b0d6fd75",
@@ -1560,7 +1572,7 @@
       "source_url": "https://archive.org/download/sample-ABCDenver-reels/ABC%20Denver3%2099.avi",
       "uploaded_at": "2026-08-22T16:50:44.714Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "f2b52725-75b8-4b0a-80df-6e00c6d007d2",
@@ -1571,7 +1583,7 @@
       "source_url": "https://archive.org/download/sample-KHOUHouston-reels/KHOU%20Houston3%2089.mp4",
       "uploaded_at": "2026-08-22T16:52:53.142Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "50a9d384-6b40-4fc5-aba0-d38863178e82",
@@ -1582,7 +1594,7 @@
       "source_url": "https://archive.org/download/sample-WCCOMinneapolis-reels/WCCO%20Minneapolis2%2039.avi",
       "uploaded_at": "2026-08-22T16:55:29.571Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "fd5142f8-6b4c-4726-b399-bbbece7d8c7a",
@@ -1593,7 +1605,7 @@
       "source_url": "https://archive.org/download/sample-CBSChicago-reels/CBS%20Chicago3%2053.avi",
       "uploaded_at": "2026-08-22T16:57:54Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "723e436e-1a6f-4837-a57d-c7afe2b7f50d",
@@ -1604,7 +1616,7 @@
       "source_url": "https://archive.org/download/sample-WCCOMinneapolis-reels/WCCO%20Minneapolis2%2028.mkv",
       "uploaded_at": "2026-08-22T17:00:10.428Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "891bdc5e-827a-4cef-a7bc-933c4c4eb98f",
@@ -1615,7 +1627,7 @@
       "source_url": "https://archive.org/download/sample-NBCAtlanta-reels/NBC%20Atlanta4%2010.avi",
       "uploaded_at": "2026-08-22T17:01:43.857Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "136f5501-d693-44a3-a7e3-ce72d990a53c",
@@ -1626,7 +1638,7 @@
       "source_url": "https://archive.org/download/sample-CBSChicago-reels/CBS%20Chicago2%2031.mp4",
       "uploaded_at": "2026-08-22T17:05:00.285Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "af7b4bdd-f495-42e6-8c13-7ead7b5f43c4",
@@ -1637,7 +1649,7 @@
       "source_url": "https://archive.org/download/sample-KHOUHouston-reels/KHOU%20Houston4%2012.mkv",
       "uploaded_at": "2026-08-22T17:07:01.714Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "4124e186-847d-4b7a-a8ac-78439b2c46ae",
@@ -1648,7 +1660,7 @@
       "source_url": "https://archive.org/download/sample-WTOPWashington-reels/WTOP%20Washington3%2050.mp4",
       "uploaded_at": "2026-08-22T17:09:46.142Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "ff516422-b493-464d-a956-b3f4dbe9b71c",
@@ -1659,7 +1671,7 @@
       "source_url": "https://archive.org/download/sample-KQEDSanFrancisco-reels/KQED%20SanFrancisco4%2012.avi",
       "uploaded_at": "2026-08-22T17:11:43.571Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "2e73343e-381f-431a-96be-b304176ae705",
@@ -1670,7 +1682,7 @@
       "source_url": "https://archive.org/download/sample-KTLALosAngeles-reels/KTLA%20LosAngeles3%2044.avi",
       "uploaded_at": "2026-08-22T17:14:03Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "78cfe679-9621-4512-9848-19a28a0bada0",
@@ -1681,7 +1693,7 @@
       "source_url": "https://archive.org/download/sample-WGBHBoston-reels/WGBH%20Boston2%2032.avi",
       "uploaded_at": "2026-08-22T17:16:32.428Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "becda781-f211-4b70-9ebf-4ada79f2bcbf",
@@ -1692,7 +1704,7 @@
       "source_url": "https://archive.org/download/sample-WTOPWashington-reels/WTOP%20Washington1%2083.mkv",
       "uploaded_at": "2026-08-22T17:19:07.857Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "953f9c7c-506e-4937-9ac2-faea72db143a",
@@ -1703,7 +1715,7 @@
       "source_url": "https://archive.org/download/sample-KHOUHouston-reels/KHOU%20Houston4%2023.mkv",
       "uploaded_at": "2026-08-22T17:20:52.285Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "0aa5c630-eaa1-44f8-8a5e-211f2f7f8011",
@@ -1714,7 +1726,7 @@
       "source_url": "https://archive.org/download/sample-CBSChicago-reels/CBS%20Chicago1%2029.mp4",
       "uploaded_at": "2026-08-22T17:23:49.714Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "e7a2e7e0-2331-480d-b8c6-f2b9ee254149",
@@ -1725,7 +1737,7 @@
       "source_url": "https://archive.org/download/sample-WGBHBoston-reels/WGBH%20Boston1%2058.mpg",
       "uploaded_at": "2026-08-22T17:26:16.142Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "43cec875-b805-4834-948b-415ea8cd3994",
@@ -1736,7 +1748,7 @@
       "source_url": "https://archive.org/download/sample-KQEDSanFrancisco-reels/KQED%20SanFrancisco2%2046.mkv",
       "uploaded_at": "2026-08-22T17:28:19.571Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "fbd037a1-e2b3-4b02-baf1-49fa0b7e743d",
@@ -1747,7 +1759,7 @@
       "source_url": "https://archive.org/download/sample-WTOPWashington-reels/WTOP%20Washington1%2030.mkv",
       "uploaded_at": "2026-08-22T17:30:55Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "0a2f4b77-e950-4eec-9f09-d9ae3795e20f",
@@ -1758,7 +1770,7 @@
       "source_url": "https://archive.org/download/sample-WTOPWashington-reels/WTOP%20Washington4%2020.mp4",
       "uploaded_at": "2026-08-22T17:33:17.428Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "d5bfba21-ea9b-4eae-a6d9-8a6480d3c6fc",
@@ -1769,7 +1781,7 @@
       "source_url": "https://archive.org/download/sample-CBSChicago-reels/CBS%20Chicago4%2084.avi",
       "uploaded_at": "2026-08-22T17:34:58.857Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "4bb36737-fcab-4407-a237-c80e403827b6",
@@ -1780,7 +1792,7 @@
       "source_url": "https://archive.org/download/sample-KHOUHouston-reels/KHOU%20Houston2%2084.mp4",
       "uploaded_at": "2026-08-22T17:37:44.285Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "cd2ffaed-cdfd-44ec-834a-5bd3ae933631",
@@ -1791,7 +1803,7 @@
       "source_url": "https://archive.org/download/sample-KTLALosAngeles-reels/KTLA%20LosAngeles1%2076.avi",
       "uploaded_at": "2026-08-22T17:39:26.714Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "ce16c4b7-e6d4-4c02-a570-5734b030f434",
@@ -1802,7 +1814,7 @@
       "source_url": "https://archive.org/download/sample-WCCOMinneapolis-reels/WCCO%20Minneapolis3%2004.avi",
       "uploaded_at": "2026-08-22T17:42:40.142Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "a6a7bff3-b29d-4423-a1bd-3fa26f8d39ea",
@@ -1813,7 +1825,7 @@
       "source_url": "https://archive.org/download/sample-CBSChicago-reels/CBS%20Chicago4%2080.mpg",
       "uploaded_at": "2026-08-22T17:44:13.571Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "9753493a-5382-4098-afa9-29cef71ceff9",
@@ -1824,7 +1836,7 @@
       "source_url": "https://archive.org/download/sample-WCCOMinneapolis-reels/WCCO%20Minneapolis1%2017.mp4",
       "uploaded_at": "2026-08-22T17:46:36Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "9e6bd7fc-f6f5-4040-bb6d-c815ba7af9ce",
@@ -1835,7 +1847,7 @@
       "source_url": "https://archive.org/download/sample-KTLALosAngeles-reels/KTLA%20LosAngeles2%2002.mp4",
       "uploaded_at": "2026-08-22T17:49:29.428Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "bcdba2fe-d380-4989-ac64-b11743d81ea2",
@@ -1846,7 +1858,7 @@
       "source_url": "https://archive.org/download/sample-WTOPWashington-reels/WTOP%20Washington1%2037.mp4",
       "uploaded_at": "2026-08-22T17:51:59.857Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "420de05e-e67d-4e12-8d51-fcc885d69977",
@@ -1857,7 +1869,7 @@
       "source_url": "https://archive.org/download/sample-CBSChicago-reels/CBS%20Chicago2%2051.avi",
       "uploaded_at": "2026-08-22T17:53:58.285Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "9e4f244c-95a4-4665-bc3f-e645e66eb2c8",
@@ -1868,7 +1880,7 @@
       "source_url": "https://archive.org/download/sample-WTOPWashington-reels/WTOP%20Washington2%2082.avi",
       "uploaded_at": "2026-08-22T17:56:34.714Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "e0b0450d-4418-4e99-a083-485ae9ded0d4",
@@ -1879,7 +1891,7 @@
       "source_url": "https://archive.org/download/sample-WGBHBoston-reels/WGBH%20Boston4%2006.mkv",
       "uploaded_at": "2026-08-22T17:58:29.142Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "c1d5cb98-a710-401f-b75c-bc79faef9ad4",
@@ -1890,7 +1902,7 @@
       "source_url": "https://archive.org/download/sample-WGBHBoston-reels/WGBH%20Boston1%2070.avi",
       "uploaded_at": "2026-08-22T18:01:17.571Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "b16d6506-baa8-414f-9052-594d9aa937e0",
@@ -1901,7 +1913,7 @@
       "source_url": "https://archive.org/download/sample-KQEDSanFrancisco-reels/KQED%20SanFrancisco3%2066.avi",
       "uploaded_at": "2026-08-22T18:03:53Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "3aa82bf3-d5d4-4b3e-ab55-54db3eb1c96e",
@@ -1912,7 +1924,7 @@
       "source_url": "https://archive.org/download/sample-WCCOMinneapolis-reels/WCCO%20Minneapolis4%2083.mp4",
       "uploaded_at": "2026-08-22T18:06:18.428Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "d8f7a74e-906d-4510-b0c1-cc63734ab8d1",
@@ -1923,7 +1935,7 @@
       "source_url": "https://archive.org/download/sample-KHOUHouston-reels/KHOU%20Houston4%2031.avi",
       "uploaded_at": "2026-08-22T18:07:45.857Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "536d54ad-f8fb-40e3-bc65-e056e45775ff",
@@ -1934,7 +1946,7 @@
       "source_url": "https://archive.org/download/sample-WCCOMinneapolis-reels/WCCO%20Minneapolis2%2024.mp4",
       "uploaded_at": "2026-08-22T18:10:28.285Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "8c1a3fba-78e9-4d47-9854-5071aa4bf7a0",
@@ -1945,7 +1957,7 @@
       "source_url": "https://archive.org/download/sample-ABCDenver-reels/ABC%20Denver1%2088.mpg",
       "uploaded_at": "2026-08-22T18:12:27.714Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "a6573a49-d5ec-4108-92f4-7e40e27de063",
@@ -1956,7 +1968,7 @@
       "source_url": "https://archive.org/download/sample-WCCOMinneapolis-reels/WCCO%20Minneapolis1%2066.avi",
       "uploaded_at": "2026-08-22T18:15:23.142Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "0fa0ec15-48e5-4865-8625-072948ede03b",
@@ -1967,7 +1979,7 @@
       "source_url": "https://archive.org/download/sample-WTOPWashington-reels/WTOP%20Washington3%2035.mpg",
       "uploaded_at": "2026-08-22T18:17:57.571Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "57383a05-0b41-4e62-a41b-d5c276b6e567",
@@ -1978,7 +1990,7 @@
       "source_url": "https://archive.org/download/sample-KHOUHouston-reels/KHOU%20Houston2%2095.mp4",
       "uploaded_at": "2026-08-22T18:19:57Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "0edde3e7-5584-4974-b330-5f4da8a531a2",
@@ -1989,7 +2001,7 @@
       "source_url": "https://archive.org/download/sample-KHOUHouston-reels/KHOU%20Houston4%2008.mp4",
       "uploaded_at": "2026-08-22T18:22:36.428Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "f126f556-c11e-4b93-9bae-1e0cf73c41e5",
@@ -2000,7 +2012,7 @@
       "source_url": "https://archive.org/download/sample-NBCAtlanta-reels/NBC%20Atlanta3%2036.mkv",
       "uploaded_at": "2026-08-22T18:24:40.857Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "d9288a71-b0d0-4c29-bba2-288c723041e9",
@@ -2011,7 +2023,7 @@
       "source_url": "https://archive.org/download/sample-KTLALosAngeles-reels/KTLA%20LosAngeles3%2068.avi",
       "uploaded_at": "2026-08-22T18:26:50.285Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "2cb25507-5cc0-4714-855c-2a6c52d4bcb9",
@@ -2022,7 +2034,7 @@
       "source_url": "https://archive.org/download/sample-KQEDSanFrancisco-reels/KQED%20SanFrancisco1%2035.mp4",
       "uploaded_at": "2026-08-22T18:29:23.714Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "3744a117-e624-4e05-acb4-ed01088e7cb8",
@@ -2033,7 +2045,7 @@
       "source_url": "https://archive.org/download/sample-WGBHBoston-reels/WGBH%20Boston4%2011.mpg",
       "uploaded_at": "2026-08-22T18:31:45.142Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "0ff20ff1-55e5-4cbd-8285-beb8efdb9f1d",
@@ -2044,7 +2056,7 @@
       "source_url": "https://archive.org/download/sample-KHOUHouston-reels/KHOU%20Houston2%2094.mp4",
       "uploaded_at": "2026-08-22T18:34:18.571Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "4580d54e-c135-4c6c-b5be-6d68dce3271c",
@@ -2055,7 +2067,7 @@
       "source_url": "https://archive.org/download/sample-WTOPWashington-reels/WTOP%20Washington2%2024.mp4",
       "uploaded_at": "2026-08-22T18:36:49Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "63d37084-354a-4656-80a5-2d0e0037cdc7",
@@ -2066,7 +2078,7 @@
       "source_url": "https://archive.org/download/sample-WTOPWashington-reels/WTOP%20Washington1%2080.mp4",
       "uploaded_at": "2026-08-22T18:39:18.428Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "9b0f9e64-eb0c-4fed-990a-72be9972df8c",
@@ -2077,7 +2089,7 @@
       "source_url": "https://archive.org/download/sample-WGBHBoston-reels/WGBH%20Boston2%2024.avi",
       "uploaded_at": "2026-08-22T18:41:02.857Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "bef75ce9-7b63-4465-a239-4f3d45521fb7",
@@ -2088,7 +2100,7 @@
       "source_url": "https://archive.org/download/sample-CBSChicago-reels/CBS%20Chicago2%2099.mp4",
       "uploaded_at": "2026-08-22T18:43:41.285Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "1b909c9a-1ff4-4f87-b88d-a67f683a6124",
@@ -2099,7 +2111,7 @@
       "source_url": "https://archive.org/download/sample-WCCOMinneapolis-reels/WCCO%20Minneapolis1%2035.mkv",
       "uploaded_at": "2026-08-22T18:45:44.714Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "e72d1b79-a305-4499-9368-8d4a399154e4",
@@ -2110,7 +2122,7 @@
       "source_url": "https://archive.org/download/sample-KQEDSanFrancisco-reels/KQED%20SanFrancisco4%2020.mpg",
       "uploaded_at": "2026-08-22T18:48:43.142Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "f04e3efc-500b-4bec-b89e-eea28fa481f3",
@@ -2121,7 +2133,7 @@
       "source_url": "https://archive.org/download/sample-ABCDenver-reels/ABC%20Denver2%2037.mp4",
       "uploaded_at": "2026-08-22T18:50:16.571Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "5899f7a0-e5c5-4c88-82d4-287829aaad12",
@@ -2132,7 +2144,7 @@
       "source_url": "https://archive.org/download/sample-CBSChicago-reels/CBS%20Chicago3%2059.mp4",
       "uploaded_at": "2026-08-22T18:53:29Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "3c0d037e-e3dd-425a-9d9a-1f8cf0cd3e0a",
@@ -2143,7 +2155,7 @@
       "source_url": "https://archive.org/download/sample-WTOPWashington-reels/WTOP%20Washington4%2066.avi",
       "uploaded_at": "2026-08-22T18:55:27.428Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "fc358117-4765-490a-9f03-e6b206de2940",
@@ -2154,7 +2166,7 @@
       "source_url": "https://archive.org/download/sample-ABCDenver-reels/ABC%20Denver1%2088.mp4",
       "uploaded_at": "2026-08-22T18:58:01.857Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "c8a59b00-1609-4b48-a8cf-44b760b3b605",
@@ -2165,7 +2177,7 @@
       "source_url": "https://archive.org/download/sample-KHOUHouston-reels/KHOU%20Houston2%2083.mp4",
       "uploaded_at": "2026-08-22T18:59:47.285Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "f4fe432c-f069-4d5a-bc4a-5222296382b0",
@@ -2176,7 +2188,7 @@
       "source_url": "https://archive.org/download/sample-KTLALosAngeles-reels/KTLA%20LosAngeles3%2049.avi",
       "uploaded_at": "2026-08-22T19:02:28.714Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "73e895c2-4efa-495f-80d1-1c6f8350bea7",
@@ -2187,7 +2199,7 @@
       "source_url": "https://archive.org/download/sample-WCCOMinneapolis-reels/WCCO%20Minneapolis1%2040.mp4",
       "uploaded_at": "2026-08-22T19:04:59.142Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "b81e1669-a730-4f0a-bbfb-625ef51ddec0",
@@ -2198,7 +2210,7 @@
       "source_url": "https://archive.org/download/sample-KQEDSanFrancisco-reels/KQED%20SanFrancisco3%2099.avi",
       "uploaded_at": "2026-08-22T19:07:24.571Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "d85a7e85-b1fd-4805-9149-f1a7252e62c9",
@@ -2209,7 +2221,7 @@
       "source_url": "https://archive.org/download/sample-WCCOMinneapolis-reels/WCCO%20Minneapolis1%2037.mp4",
       "uploaded_at": "2026-08-22T19:09:55Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "546e4a22-0cd7-4a29-beeb-87ee8f7c97ac",
@@ -2220,7 +2232,7 @@
       "source_url": "https://archive.org/download/sample-WTOPWashington-reels/WTOP%20Washington2%2058.mp4",
       "uploaded_at": "2026-08-22T19:11:58.428Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "8348d9e6-88c0-403e-8d95-f21257d59d07",
@@ -2231,7 +2243,7 @@
       "source_url": "https://archive.org/download/sample-ABCDenver-reels/ABC%20Denver1%2044.mpg",
       "uploaded_at": "2026-08-22T19:13:58.857Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "9554360a-9a4a-4640-87a1-0006dba2e559",
@@ -2242,7 +2254,7 @@
       "source_url": "https://archive.org/download/sample-KQEDSanFrancisco-reels/KQED%20SanFrancisco3%2077.avi",
       "uploaded_at": "2026-08-22T19:16:59.285Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "e2ab1572-6eba-4be4-91aa-dad9744a1305",
@@ -2253,7 +2265,7 @@
       "source_url": "https://archive.org/download/sample-KQEDSanFrancisco-reels/KQED%20SanFrancisco2%2007.mp4",
       "uploaded_at": "2026-08-22T19:19:20.714Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "86320faa-5bbb-492a-919c-cad9c197c821",
@@ -2264,7 +2276,7 @@
       "source_url": "https://archive.org/download/sample-KTLALosAngeles-reels/KTLA%20LosAngeles4%2004.mp4",
       "uploaded_at": "2026-08-22T19:20:55.142Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "ddb32a9a-141b-4c44-a51e-7c604835581b",
@@ -2275,7 +2287,7 @@
       "source_url": "https://archive.org/download/sample-KHOUHouston-reels/KHOU%20Houston4%2058.mkv",
       "uploaded_at": "2026-08-22T19:24:05.571Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "413deaae-84b9-4154-9880-209c0442c0a3",
@@ -2286,7 +2298,7 @@
       "source_url": "https://archive.org/download/sample-KHOUHouston-reels/KHOU%20Houston4%2073.mkv",
       "uploaded_at": "2026-08-22T19:25:36Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "e4ab24af-6171-4f06-adb6-f25a144c61e5",
@@ -2297,7 +2309,7 @@
       "source_url": "https://archive.org/download/sample-WGBHBoston-reels/WGBH%20Boston3%2038.mkv",
       "uploaded_at": "2026-08-22T19:28:48.428Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "c5954562-9ff1-4c44-a832-c13200221bdb",
@@ -2308,7 +2320,7 @@
       "source_url": "https://archive.org/download/sample-KHOUHouston-reels/KHOU%20Houston2%2097.avi",
       "uploaded_at": "2026-08-22T19:30:57.857Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "2d213af5-163e-4869-bf4b-5345f83f2792",
@@ -2319,7 +2331,7 @@
       "source_url": "https://archive.org/download/sample-CBSChicago-reels/CBS%20Chicago1%2075.mkv",
       "uploaded_at": "2026-08-22T19:33:30.285Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "edcb26f8-5fb6-42fc-9b07-f6fcdfb2fd2e",
@@ -2330,7 +2342,7 @@
       "source_url": "https://archive.org/download/sample-ABCDenver-reels/ABC%20Denver4%2003.mkv",
       "uploaded_at": "2026-08-22T19:35:00.714Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "31c48c24-35a5-4662-ad02-d5414289a7a3",
@@ -2341,7 +2353,7 @@
       "source_url": "https://archive.org/download/sample-WGBHBoston-reels/WGBH%20Boston1%2069.mpg",
       "uploaded_at": "2026-08-22T19:37:34.142Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "792b0131-935b-402d-8ce1-dc9bf968a07c",
@@ -2352,7 +2364,7 @@
       "source_url": "https://archive.org/download/sample-WTOPWashington-reels/WTOP%20Washington3%2023.avi",
       "uploaded_at": "2026-08-22T19:40:21.571Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "cdeee710-3add-4ca5-a6b5-9adfe930a1b7",
@@ -2363,7 +2375,7 @@
       "source_url": "https://archive.org/download/sample-KQEDSanFrancisco-reels/KQED%20SanFrancisco2%2075.mp4",
       "uploaded_at": "2026-08-22T19:42:10Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "e184ecff-5d88-45a3-9317-260b4aed7764",
@@ -2374,7 +2386,7 @@
       "source_url": "https://archive.org/download/sample-KHOUHouston-reels/KHOU%20Houston1%2069.mp4",
       "uploaded_at": "2026-08-22T19:44:48.428Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "39dd610c-72cd-416a-b9bf-dd218f9002de",
@@ -2385,7 +2397,7 @@
       "source_url": "https://archive.org/download/sample-WTOPWashington-reels/WTOP%20Washington3%2050.avi",
       "uploaded_at": "2026-08-22T19:47:03.857Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "eebde1cd-4ef9-4a5a-b536-47d7a343bb8a",
@@ -2396,7 +2408,7 @@
       "source_url": "https://archive.org/download/sample-WCCOMinneapolis-reels/WCCO%20Minneapolis1%2071.mp4",
       "uploaded_at": "2026-08-22T19:49:22.285Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "a0bade4c-3e31-483d-8136-760d3e12ff9c",
@@ -2407,7 +2419,7 @@
       "source_url": "https://archive.org/download/sample-WTOPWashington-reels/WTOP%20Washington1%2009.avi",
       "uploaded_at": "2026-08-22T19:52:23.714Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "e2d85fab-f9fc-4c9d-b1a1-a7c110533f5e",
@@ -2418,7 +2430,7 @@
       "source_url": "https://archive.org/download/sample-WGBHBoston-reels/WGBH%20Boston4%2085.avi",
       "uploaded_at": "2026-08-22T19:54:21.142Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "485ed5a7-5988-4ad5-a727-3b2b7212cd9e",
@@ -2429,7 +2441,7 @@
       "source_url": "https://archive.org/download/sample-KHOUHouston-reels/KHOU%20Houston3%2047.mp4",
       "uploaded_at": "2026-08-22T19:56:52.571Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "b47b1f28-7b69-4f2e-8766-a0f2eec8479c",
@@ -2440,7 +2452,7 @@
       "source_url": "https://archive.org/download/sample-KTLALosAngeles-reels/KTLA%20LosAngeles2%2083.mp4",
       "uploaded_at": "2026-08-22T19:59:11Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "38859ad5-3592-4202-94e3-1f824ae65029",
@@ -2451,7 +2463,7 @@
       "source_url": "https://archive.org/download/sample-WCCOMinneapolis-reels/WCCO%20Minneapolis3%2086.avi",
       "uploaded_at": "2026-08-22T20:01:23.428Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "6a761e27-3d37-45af-ad98-fec708fc4b5d",
@@ -2462,7 +2474,7 @@
       "source_url": "https://archive.org/download/sample-ABCDenver-reels/ABC%20Denver3%2071.mpg",
       "uploaded_at": "2026-08-22T20:04:08.857Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG",
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG",
       "failed_checks": {
         "2026-08-30": 1,
         "2026-10-02": 1
@@ -2477,7 +2489,7 @@
       "source_url": "https://archive.org/download/sample-KHOUHouston-reels/KHOU%20Houston3%2076.mkv",
       "uploaded_at": "2026-08-22T20:05:57.285Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "0f5d9c7f-7dda-463b-b232-798b85109b81",
@@ -2488,7 +2500,7 @@
       "source_url": "https://archive.org/download/sample-WCCOMinneapolis-reels/WCCO%20Minneapolis2%2007.mpg",
       "uploaded_at": "2026-08-22T20:08:17.714Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "e5a83871-9a00-4bd8-8c9c-7c573cbb5a8f",
@@ -2499,7 +2511,7 @@
       "source_url": "https://archive.org/download/sample-WCCOMinneapolis-reels/WCCO%20Minneapolis3%2080.mp4",
       "uploaded_at": "2026-08-22T20:10:47.142Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "829689a6-cf92-434b-9be5-1a3aa2c21ea9",
@@ -2510,7 +2522,7 @@
       "source_url": "https://archive.org/download/sample-KTLALosAngeles-reels/KTLA%20LosAngeles4%2090.mkv",
       "uploaded_at": "2026-08-22T20:13:34.571Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "a96d2af4-8444-4055-ba59-647440e09ae8",
@@ -2521,7 +2533,7 @@
       "source_url": "https://archive.org/download/sample-NBCAtlanta-reels/NBC%20Atlanta3%2048.mkv",
       "uploaded_at": "2026-08-22T20:15:35Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "5b6df7ec-495a-41ab-a5fb-99ccd93c074f",
@@ -2532,7 +2544,7 @@
       "source_url": "https://archive.org/download/sample-NBCAtlanta-reels/NBC%20Atlanta1%2088.mkv",
       "uploaded_at": "2026-08-22T20:17:49.428Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "bfe76219-143f-477c-b5d1-e5953934b70a",
@@ -2543,7 +2555,7 @@
       "source_url": "https://archive.org/download/sample-NBCAtlanta-reels/NBC%20Atlanta3%2046.mp4",
       "uploaded_at": "2026-08-22T20:20:15.857Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "43920ab7-fbdb-48ef-8419-47298628459d",
@@ -2554,7 +2566,7 @@
       "source_url": "https://archive.org/download/sample-KTLALosAngeles-reels/KTLA%20LosAngeles3%2006.mpg",
       "uploaded_at": "2026-08-22T20:22:09.285Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "9975af65-4c10-4baa-8f4d-18b35587450d",
@@ -2565,7 +2577,7 @@
       "source_url": "https://archive.org/download/sample-ABCDenver-reels/ABC%20Denver1%2059.mpg",
       "uploaded_at": "2026-08-22T20:25:19.714Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "5c43c064-39ce-48cb-8633-9051d2182f61",
@@ -2576,7 +2588,7 @@
       "source_url": "https://archive.org/download/sample-WTOPWashington-reels/WTOP%20Washington4%2002.mpg",
       "uploaded_at": "2026-08-22T20:27:42.142Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "33499ab3-aacd-4064-b4f3-afcbff69b8f2",
@@ -2587,7 +2599,7 @@
       "source_url": "https://archive.org/download/sample-WGBHBoston-reels/WGBH%20Boston3%2005.mp4",
       "uploaded_at": "2026-08-22T20:30:03.571Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "accc3813-0643-4004-bb83-c05f9ba7b870",
@@ -2598,7 +2610,7 @@
       "source_url": "https://archive.org/download/sample-NBCAtlanta-reels/NBC%20Atlanta1%2095.mkv",
       "uploaded_at": "2026-08-22T20:31:36Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "b0acd174-4f4c-4868-aab0-d1143981c10c",
@@ -2609,7 +2621,7 @@
       "source_url": "https://archive.org/download/sample-NBCAtlanta-reels/NBC%20Atlanta3%2094.avi",
       "uploaded_at": "2026-08-22T20:34:01.428Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "9d8aa096-e672-4a27-95e0-f3961664a69c",
@@ -2620,7 +2632,7 @@
       "source_url": "https://archive.org/download/sample-KQEDSanFrancisco-reels/KQED%20SanFrancisco1%2044.avi",
       "uploaded_at": "2026-08-22T20:36:36.857Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "4f0dcbde-edac-409a-9668-ce684ce87a99",
@@ -2631,7 +2643,7 @@
       "source_url": "https://archive.org/download/sample-WTOPWashington-reels/WTOP%20Washington1%2087.mp4",
       "uploaded_at": "2026-08-22T20:38:37.285Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "183b6f65-6372-4123-8e16-2441213e4e99",
@@ -2642,7 +2654,7 @@
       "source_url": "https://archive.org/download/sample-NBCAtlanta-reels/NBC%20Atlanta1%2080.mp4",
       "uploaded_at": "2026-08-22T20:41:16.714Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "66b21b6c-cec3-4623-96de-484f8872fc6e",
@@ -2653,7 +2665,7 @@
       "source_url": "https://archive.org/download/sample-WCCOMinneapolis-reels/WCCO%20Minneapolis4%2008.mp4",
       "uploaded_at": "2026-08-22T20:44:04.142Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "2733b505-7259-4d3b-9936-df96caf472a0",
@@ -2664,7 +2676,7 @@
       "source_url": "https://archive.org/download/sample-KQEDSanFrancisco-reels/KQED%20SanFrancisco2%2041.mpg",
       "uploaded_at": "2026-08-22T20:46:20.571Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "0d6c3ec6-888c-40bc-8416-5d78e728f87d",
@@ -2675,7 +2687,7 @@
       "source_url": "https://archive.org/download/sample-NBCAtlanta-reels/NBC%20Atlanta1%2092.mp4",
       "uploaded_at": "2026-08-22T20:48:53Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "6e9cc0b5-849a-4f45-90e1-d9d8aeb7f48e",
@@ -2686,7 +2698,7 @@
       "source_url": "https://archive.org/download/sample-WCCOMinneapolis-reels/WCCO%20Minneapolis4%2073.mpg",
       "uploaded_at": "2026-08-22T20:50:56.428Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "ec769617-4e95-40f0-b512-b3465306f1c8",
@@ -2697,7 +2709,7 @@
       "source_url": "https://archive.org/download/sample-WTOPWashington-reels/WTOP%20Washington1%2062.mkv",
       "uploaded_at": "2026-08-22T20:53:29.857Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "a8af2773-7e92-408a-a9a2-67547271ecf0",
@@ -2708,7 +2720,7 @@
       "source_url": "https://archive.org/download/sample-ABCDenver-reels/ABC%20Denver1%2033.mkv",
       "uploaded_at": "2026-08-22T20:55:32.285Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "c906b6cb-8b80-47f5-a847-4dfb2fd0f624",
@@ -2719,7 +2731,7 @@
       "source_url": "https://archive.org/download/sample-KQEDSanFrancisco-reels/KQED%20SanFrancisco2%2078.mpg",
       "uploaded_at": "2026-08-22T20:58:04.714Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "7e8051a6-a6f7-4d38-822a-5b3567d23750",
@@ -2730,7 +2742,7 @@
       "source_url": "https://archive.org/download/sample-KQEDSanFrancisco-reels/KQED%20SanFrancisco2%2087.mkv",
       "uploaded_at": "2026-08-22T21:00:22.142Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "79ef8c35-7e8a-4069-b30b-7a2985eafefa",
@@ -2741,7 +2753,7 @@
       "source_url": "https://archive.org/download/sample-KTLALosAngeles-reels/KTLA%20LosAngeles1%2040.mp4",
       "uploaded_at": "2026-08-22T21:02:28.571Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "43cee5b0-58cb-4463-971d-d2f8638ab0ff",
@@ -2752,7 +2764,7 @@
       "source_url": "https://archive.org/download/sample-CBSChicago-reels/CBS%20Chicago3%2061.avi",
       "uploaded_at": "2026-08-22T21:04:58.999Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "ba5bd79b-bfe7-46a1-9252-5d9182adfb73",
@@ -2763,7 +2775,7 @@
       "source_url": "https://archive.org/download/sample-WGBHBoston-reels/WGBH%20Boston3%2077.mp4",
       "uploaded_at": "2026-08-22T21:07:35.428Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "80084620-c2a9-421d-a6af-ad1d85c41070",
@@ -2774,7 +2786,7 @@
       "source_url": "https://archive.org/download/sample-KTLALosAngeles-reels/KTLA%20LosAngeles3%2085.mpg",
       "uploaded_at": "2026-08-22T21:09:15.857Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "d7f42d54-d331-4a56-bb54-1611fb0c92e9",
@@ -2785,7 +2797,7 @@
       "source_url": "https://archive.org/download/sample-WTOPWashington-reels/WTOP%20Washington4%2026.mpg",
       "uploaded_at": "2026-08-22T21:11:43.285Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "008caa06-2798-4517-bc80-fc87a0dd9f6d",
@@ -2796,7 +2808,7 @@
       "source_url": "https://archive.org/download/sample-CBSChicago-reels/CBS%20Chicago2%2083.mp4",
       "uploaded_at": "2026-08-22T21:14:38.714Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "c192559a-693e-40a8-96e9-7b515c90cea1",
@@ -2807,7 +2819,7 @@
       "source_url": "https://archive.org/download/sample-WTOPWashington-reels/WTOP%20Washington3%2083.mp4",
       "uploaded_at": "2026-08-22T21:16:37.142Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "e21a9d6b-84ad-42f4-8693-cd37220a5ab8",
@@ -2818,7 +2830,7 @@
       "source_url": "https://archive.org/download/sample-KTLALosAngeles-reels/KTLA%20LosAngeles3%2089.mkv",
       "uploaded_at": "2026-08-22T21:18:55.571Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "5e54185b-2a4d-4d12-9008-3cc33403d069",
@@ -2829,7 +2841,7 @@
       "source_url": "https://archive.org/download/sample-WGBHBoston-reels/WGBH%20Boston4%2007.mp4",
       "uploaded_at": "2026-08-22T21:21:55Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "60d05127-939e-464d-955f-80d456eb7bf7",
@@ -2840,7 +2852,7 @@
       "source_url": "https://archive.org/download/sample-WTOPWashington-reels/WTOP%20Washington4%2090.mpg",
       "uploaded_at": "2026-08-22T21:24:06.428Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "150ec474-05bc-4317-8fd0-73cec760b8e1",
@@ -2851,7 +2863,7 @@
       "source_url": "https://archive.org/download/sample-KTLALosAngeles-reels/KTLA%20LosAngeles1%2096.mp4",
       "uploaded_at": "2026-08-22T21:26:27.857Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "8818a9f7-1215-488e-a272-81855453068a",
@@ -2862,7 +2874,7 @@
       "source_url": "https://archive.org/download/sample-ABCDenver-reels/ABC%20Denver3%2065.avi",
       "uploaded_at": "2026-08-22T21:28:52.285Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "c0a46429-1cb0-40fb-b1b2-51e5d057717e",
@@ -2873,7 +2885,7 @@
       "source_url": "https://archive.org/download/sample-WCCOMinneapolis-reels/WCCO%20Minneapolis1%2049.avi",
       "uploaded_at": "2026-08-22T21:31:00.714Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "448807e8-fbf7-4897-87e1-ce62ba040bfa",
@@ -2884,7 +2896,7 @@
       "source_url": "https://archive.org/download/sample-KTLALosAngeles-reels/KTLA%20LosAngeles2%2012.mp4",
       "uploaded_at": "2026-08-22T21:32:48.142Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "41a0b48d-e272-4228-bae5-f782a76e9809",
@@ -2895,7 +2907,7 @@
       "source_url": "https://archive.org/download/sample-WGBHBoston-reels/WGBH%20Boston2%2074.mpg",
       "uploaded_at": "2026-08-22T21:35:08.571Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "67f831e3-0757-4011-b720-fe8ed5b2555b",
@@ -2906,7 +2918,7 @@
       "source_url": "https://archive.org/download/sample-ABCDenver-reels/ABC%20Denver4%2023.mkv",
       "uploaded_at": "2026-08-22T21:38:01Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "77686536-c448-45d1-8402-07cf487849f0",
@@ -2917,7 +2929,7 @@
       "source_url": "https://archive.org/download/sample-CBSChicago-reels/CBS%20Chicago3%2048.mp4",
       "uploaded_at": "2026-08-22T21:40:31.428Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "a4c49c9b-373c-44c8-b8e6-a1d432b1f59d",
@@ -2928,7 +2940,7 @@
       "source_url": "https://archive.org/download/sample-WGBHBoston-reels/WGBH%20Boston3%2076.avi",
       "uploaded_at": "2026-08-22T21:42:48.857Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "ffd137ef-ecf9-4b06-902e-5f5adbdca05b",
@@ -2939,7 +2951,7 @@
       "source_url": "https://archive.org/download/sample-KQEDSanFrancisco-reels/KQED%20SanFrancisco2%2059.mp4",
       "uploaded_at": "2026-08-22T21:44:43.285Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "343d4c2e-d2e4-4645-837b-3129f10fc597",
@@ -2950,7 +2962,7 @@
       "source_url": "https://archive.org/download/sample-ABCDenver-reels/ABC%20Denver2%2065.mkv",
       "uploaded_at": "2026-08-22T21:47:50.714Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "ed303aa9-e2c6-449a-9877-161ec5c4add0",
@@ -2961,7 +2973,7 @@
       "source_url": "https://archive.org/download/sample-WCCOMinneapolis-reels/WCCO%20Minneapolis2%2006.mpg",
       "uploaded_at": "2026-08-22T21:50:15.142Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "d36d1243-bf1d-4b04-a125-8580494d62e5",
@@ -2972,7 +2984,7 @@
       "source_url": "https://archive.org/download/sample-WGBHBoston-reels/WGBH%20Boston4%2023.mp4",
       "uploaded_at": "2026-08-22T21:52:01.571Z",
       "available_now": true,
-      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "5cf132c2-6d0d-485d-9c0a-d363b8e6dfc4",
@@ -2983,7 +2995,7 @@
       "source_url": "https://archive.org/download/sample-CBSChicago-reels/CBS%20Chicago3%2040.mpg",
       "uploaded_at": "2026-08-23T00:10:03Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "a10b7ade-6f56-49e3-adc5-72279287f545",
@@ -2994,7 +3006,7 @@
       "source_url": "https://archive.org/download/sample-KQEDSanFrancisco-reels/KQED%20SanFrancisco2%2015.mp4",
       "uploaded_at": "2026-08-23T00:20:19.714Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "42a9ca23-1f3e-4639-9e43-9f73cc188e90",
@@ -3005,7 +3017,7 @@
       "source_url": "https://archive.org/download/sample-ABCDenver-reels/ABC%20Denver4%2089.avi",
       "uploaded_at": "2026-08-23T00:29:16.428Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "aa94f1a8-ec16-4154-a050-3503e7845f71",
@@ -3016,7 +3028,7 @@
       "source_url": "https://archive.org/download/sample-NBCAtlanta-reels/NBC%20Atlanta4%2055.mkv",
       "uploaded_at": "2026-08-23T00:39:01.142Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "f30031a5-500e-4ef5-8c29-7b4d55059a42",
@@ -3027,7 +3039,7 @@
       "source_url": "https://archive.org/download/sample-WCCOMinneapolis-reels/WCCO%20Minneapolis3%2057.mpg",
       "uploaded_at": "2026-08-23T00:47:50.857Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "0c574ea0-1b17-4d68-9c2f-e5bdd6a2e4ff",
@@ -3038,7 +3050,7 @@
       "source_url": "https://archive.org/download/sample-KHOUHouston-reels/KHOU%20Houston1%2036.mp4",
       "uploaded_at": "2026-08-23T00:57:29.571Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "8b597f9c-da0b-4a03-818c-c52397112797",
@@ -3049,7 +3061,7 @@
       "source_url": "https://archive.org/download/sample-CBSChicago-reels/CBS%20Chicago3%2004.mpg",
       "uploaded_at": "2026-08-23T01:07:17.285Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "db256ead-4e75-48e7-b44c-b08cc6ee3c24",
@@ -3060,7 +3072,7 @@
       "source_url": "https://archive.org/download/sample-ABCDenver-reels/ABC%20Denver1%2097.mpg",
       "uploaded_at": "2026-08-23T01:16:34Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "208dc705-878b-435e-9f41-fd6fa2a9eebf",
@@ -3071,7 +3083,7 @@
       "source_url": "https://archive.org/download/sample-KTLALosAngeles-reels/KTLA%20LosAngeles4%2066.mpg",
       "uploaded_at": "2026-08-23T01:25:27.714Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "c6f73559-6545-4f85-9f59-887dd413d52f",
@@ -3082,7 +3094,7 @@
       "source_url": "https://archive.org/download/sample-KQEDSanFrancisco-reels/KQED%20SanFrancisco2%2068.mp4",
       "uploaded_at": "2026-08-23T01:35:39.428Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "64696755-9f4a-44e4-bf69-95cf6aae20ed",
@@ -3093,7 +3105,7 @@
       "source_url": "https://archive.org/download/sample-KQEDSanFrancisco-reels/KQED%20SanFrancisco4%2039.avi",
       "uploaded_at": "2026-08-23T01:45:07.142Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "8e8ad7ca-2899-4f2a-b046-416dab6e8690",
@@ -3104,7 +3116,7 @@
       "source_url": "https://archive.org/download/sample-WGBHBoston-reels/WGBH%20Boston1%2011.mp4",
       "uploaded_at": "2026-08-23T01:54:21.857Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "1c921704-6450-474b-8aa9-dabf99ecf51e",
@@ -3115,7 +3127,7 @@
       "source_url": "https://archive.org/download/sample-NBCAtlanta-reels/NBC%20Atlanta1%2007.avi",
       "uploaded_at": "2026-08-23T02:03:15.571Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "d8337f93-bf37-44a9-89f5-500cc3fb9b5f",
@@ -3126,7 +3138,7 @@
       "source_url": "https://archive.org/download/sample-KQEDSanFrancisco-reels/KQED%20SanFrancisco1%2009.mpg",
       "uploaded_at": "2026-08-23T02:12:44.285Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "caabe8db-e2f9-4178-b509-e2bd3111dbf9",
@@ -3137,7 +3149,7 @@
       "source_url": "https://archive.org/download/sample-WCCOMinneapolis-reels/WCCO%20Minneapolis1%2075.mp4",
       "uploaded_at": "2026-08-23T02:22:31Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "4f8d9627-bd80-4421-bc6d-fd9af55fe68b",
@@ -3148,7 +3160,7 @@
       "source_url": "https://archive.org/download/sample-CBSChicago-reels/CBS%20Chicago3%2044.mp4",
       "uploaded_at": "2026-08-23T02:31:34.714Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "c4df08c5-adf9-4c29-9174-37b70c65e5a7",
@@ -3159,7 +3171,7 @@
       "source_url": "https://archive.org/download/sample-KHOUHouston-reels/KHOU%20Houston4%2032.avi",
       "uploaded_at": "2026-08-23T02:41:01.428Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "67830b2a-0785-45f5-a583-a6c02bbb0dea",
@@ -3170,7 +3182,7 @@
       "source_url": "https://archive.org/download/sample-KQEDSanFrancisco-reels/KQED%20SanFrancisco4%2029.avi",
       "uploaded_at": "2026-08-23T02:51:01.142Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "37a5b8bb-50ff-42b1-bfe1-c0bf904e7d72",
@@ -3181,7 +3193,7 @@
       "source_url": "https://archive.org/download/sample-NBCAtlanta-reels/NBC%20Atlanta2%2059.mp4",
       "uploaded_at": "2026-08-23T03:00:34.857Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "82aea3bc-0382-47a2-82ed-f87fc8bf2967",
@@ -3192,7 +3204,7 @@
       "source_url": "https://archive.org/download/sample-KHOUHouston-reels/KHOU%20Houston4%2058.avi",
       "uploaded_at": "2026-08-23T03:10:03.571Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "66bfe8c8-9823-4912-ac87-708b98217c96",
@@ -3203,7 +3215,7 @@
       "source_url": "https://archive.org/download/sample-WGBHBoston-reels/WGBH%20Boston3%2036.avi",
       "uploaded_at": "2026-08-23T03:19:14.285Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "eec0338e-1bb9-4505-8931-af2cd22bef1b",
@@ -3214,7 +3226,7 @@
       "source_url": "https://archive.org/download/sample-ABCDenver-reels/ABC%20Denver2%2050.avi",
       "uploaded_at": "2026-08-23T03:28:58Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "60908d25-4dcf-488b-94cb-4ea9f06d1492",
@@ -3225,7 +3237,7 @@
       "source_url": "https://archive.org/download/sample-NBCAtlanta-reels/NBC%20Atlanta2%2014.avi",
       "uploaded_at": "2026-08-23T03:37:41.714Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "546441b2-b4c8-4469-8b8f-a2e149f039f4",
@@ -3236,7 +3248,7 @@
       "source_url": "https://archive.org/download/sample-CBSChicago-reels/CBS%20Chicago1%2070.mkv",
       "uploaded_at": "2026-08-23T03:47:11.428Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "29e964e4-9df4-4f02-a025-789a873bae30",
@@ -3247,7 +3259,7 @@
       "source_url": "https://archive.org/download/sample-WGBHBoston-reels/WGBH%20Boston4%2072.mp4",
       "uploaded_at": "2026-08-23T03:56:38.142Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "9d9caeee-2600-4a69-8aea-559b1ea7867f",
@@ -3258,7 +3270,7 @@
       "source_url": "https://archive.org/download/sample-NBCAtlanta-reels/NBC%20Atlanta3%2077.avi",
       "uploaded_at": "2026-08-23T04:06:36.857Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "511dcdf5-048d-4a47-a29f-a8c58cc116a9",
@@ -3269,7 +3281,7 @@
       "source_url": "https://archive.org/download/sample-WTOPWashington-reels/WTOP%20Washington2%2023.avi",
       "uploaded_at": "2026-08-23T04:15:38.571Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "451e4615-8f6d-4cb6-8144-543ea001193b",
@@ -3280,7 +3292,7 @@
       "source_url": "https://archive.org/download/sample-WGBHBoston-reels/WGBH%20Boston2%2072.mp4",
       "uploaded_at": "2026-08-23T04:25:07.285Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "761ab0be-529f-4b75-ae75-958416e81c06",
@@ -3291,7 +3303,7 @@
       "source_url": "https://archive.org/download/sample-WGBHBoston-reels/WGBH%20Boston2%2058.mpg",
       "uploaded_at": "2026-08-23T04:34:44Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "20c76fdd-bf0b-436f-b8a4-3f858dc65394",
@@ -3302,7 +3314,7 @@
       "source_url": "https://archive.org/download/sample-WGBHBoston-reels/WGBH%20Boston4%2043.avi",
       "uploaded_at": "2026-08-23T04:43:51.714Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "24c6aa1d-31f1-4ab3-bb8a-af79e9c13bd4",
@@ -3313,7 +3325,7 @@
       "source_url": "https://archive.org/download/sample-NBCAtlanta-reels/NBC%20Atlanta2%2060.mp4",
       "uploaded_at": "2026-08-23T04:53:48.428Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "c7ca33e0-0df0-42d8-b355-ecba3c8ad5ed",
@@ -3324,7 +3336,7 @@
       "source_url": "https://archive.org/download/sample-KHOUHouston-reels/KHOU%20Houston1%2049.mp4",
       "uploaded_at": "2026-08-23T05:02:34.142Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "0432ac19-b98c-42f6-8c4e-41f338755219",
@@ -3335,7 +3347,7 @@
       "source_url": "https://archive.org/download/sample-KHOUHouston-reels/KHOU%20Houston1%2009.mp4",
       "uploaded_at": "2026-08-23T05:12:40.857Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "0599830a-4cf9-4bd6-a12f-fd32591424ac",
@@ -3346,7 +3358,7 @@
       "source_url": "https://archive.org/download/sample-NBCAtlanta-reels/NBC%20Atlanta2%2038.mkv",
       "uploaded_at": "2026-08-23T05:21:23.571Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "3b93512d-3f40-46fe-a6a0-6a076ae43aa2",
@@ -3357,7 +3369,7 @@
       "source_url": "https://archive.org/download/sample-KHOUHouston-reels/KHOU%20Houston1%2001.mp4",
       "uploaded_at": "2026-08-23T05:30:47.285Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "8cc47460-f93d-4db0-bdf0-312d6d569d24",
@@ -3368,7 +3380,7 @@
       "source_url": "https://archive.org/download/sample-WGBHBoston-reels/WGBH%20Boston1%2082.mkv",
       "uploaded_at": "2026-08-23T05:40:23Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "8e8b536b-1293-41ca-811c-d66e31151d20",
@@ -3379,7 +3391,7 @@
       "source_url": "https://archive.org/download/sample-NBCAtlanta-reels/NBC%20Atlanta3%2073.mpg",
       "uploaded_at": "2026-08-23T05:49:53.714Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "fce87010-22f3-439d-b193-f335b4ef8462",
@@ -3390,7 +3402,7 @@
       "source_url": "https://archive.org/download/sample-ABCDenver-reels/ABC%20Denver4%2014.mp4",
       "uploaded_at": "2026-08-23T05:59:07.428Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "1ba8ff38-433c-456a-be38-9006187bde89",
@@ -3401,7 +3413,7 @@
       "source_url": "https://archive.org/download/sample-KQEDSanFrancisco-reels/KQED%20SanFrancisco3%2059.mpg",
       "uploaded_at": "2026-08-23T06:08:47.142Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "dd9b46ae-e80c-4c46-93fe-429f233423d2",
@@ -3412,7 +3424,7 @@
       "source_url": "https://archive.org/download/sample-ABCDenver-reels/ABC%20Denver3%2090.mp4",
       "uploaded_at": "2026-08-23T06:18:36.857Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "d278334c-7844-49ff-889b-30cf0f6e86de",
@@ -3423,7 +3435,7 @@
       "source_url": "https://archive.org/download/sample-KHOUHouston-reels/KHOU%20Houston3%2099.mkv",
       "uploaded_at": "2026-08-23T06:27:42.571Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "97d7808c-6e7f-4ca5-b892-3f7dd6f98a6c",
@@ -3434,7 +3446,7 @@
       "source_url": "https://archive.org/download/sample-WCCOMinneapolis-reels/WCCO%20Minneapolis4%2037.avi",
       "uploaded_at": "2026-08-23T06:36:58.285Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "6674c9cd-91fa-4d3d-a38a-662dc6c94693",
@@ -3445,7 +3457,7 @@
       "source_url": "https://archive.org/download/sample-KTLALosAngeles-reels/KTLA%20LosAngeles1%2050.avi",
       "uploaded_at": "2026-08-23T06:46:23Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "0a796236-1408-4c63-855b-631e312654f1",
@@ -3456,7 +3468,7 @@
       "source_url": "https://archive.org/download/sample-KHOUHouston-reels/KHOU%20Houston1%2005.mpg",
       "uploaded_at": "2026-08-23T06:56:12.714Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "6d414941-491f-4119-adb0-3e023e9869fe",
@@ -3467,7 +3479,7 @@
       "source_url": "https://archive.org/download/sample-WCCOMinneapolis-reels/WCCO%20Minneapolis1%2022.mp4",
       "uploaded_at": "2026-08-23T07:05:22.428Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "78c48416-ad99-4d0e-b762-fba5b04b1661",
@@ -3478,7 +3490,7 @@
       "source_url": "https://archive.org/download/sample-WTOPWashington-reels/WTOP%20Washington3%2079.mkv",
       "uploaded_at": "2026-08-23T07:14:17.142Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "aace13ef-d073-41db-b2db-39ae6790d97c",
@@ -3489,7 +3501,7 @@
       "source_url": "https://archive.org/download/sample-ABCDenver-reels/ABC%20Denver4%2019.mp4",
       "uploaded_at": "2026-08-23T07:23:51.857Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "4ade508e-fe17-4dd5-8d97-7df7de1abf4a",
@@ -3500,7 +3512,7 @@
       "source_url": "https://archive.org/download/sample-WGBHBoston-reels/WGBH%20Boston1%2019.mp4",
       "uploaded_at": "2026-08-23T07:33:31.571Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "dbda486e-5abd-4c5b-8c74-40cdbf64e6f1",
@@ -3511,7 +3523,7 @@
       "source_url": "https://archive.org/download/sample-WTOPWashington-reels/WTOP%20Washington1%2084.avi",
       "uploaded_at": "2026-08-23T07:43:16.285Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "f43573cc-2c28-46ee-bfe6-c37b9c4c1146",
@@ -3522,7 +3534,7 @@
       "source_url": "https://archive.org/download/sample-ABCDenver-reels/ABC%20Denver2%2087.mkv",
       "uploaded_at": "2026-08-23T07:52:03Z",
       "available_now": false,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGRRRR",
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGRRRR",
       "episodes": [
         {
           "from": "2026-10-06T11:00:00Z",
@@ -3540,7 +3552,7 @@
       "source_url": "https://archive.org/download/sample-KTLALosAngeles-reels/KTLA%20LosAngeles4%2003.mp4",
       "uploaded_at": "2026-08-23T08:01:44.714Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "1e59ccb1-0903-494b-8098-674a7749bdf3",
@@ -3551,7 +3563,7 @@
       "source_url": "https://archive.org/download/sample-KQEDSanFrancisco-reels/KQED%20SanFrancisco2%2063.mp4",
       "uploaded_at": "2026-08-23T08:11:39.428Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "97ac3f17-1ab0-4914-8505-e4c1c658b0b9",
@@ -3562,7 +3574,7 @@
       "source_url": "https://archive.org/download/sample-KHOUHouston-reels/KHOU%20Houston3%2017.mkv",
       "uploaded_at": "2026-08-23T08:20:46.142Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "24b1c71a-a86b-4c76-988f-7713c236eee6",
@@ -3573,7 +3585,7 @@
       "source_url": "https://archive.org/download/sample-WCCOMinneapolis-reels/WCCO%20Minneapolis3%2052.avi",
       "uploaded_at": "2026-08-23T08:30:10.857Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "59761259-1d14-4bbd-a11b-99aebd5fdd28",
@@ -3584,7 +3596,7 @@
       "source_url": "https://archive.org/download/sample-ABCDenver-reels/ABC%20Denver4%2052.mp4",
       "uploaded_at": "2026-08-23T08:40:03.571Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "4082b425-28d3-469e-ac84-97345d7ad641",
@@ -3595,7 +3607,7 @@
       "source_url": "https://archive.org/download/sample-NBCAtlanta-reels/NBC%20Atlanta3%2033.avi",
       "uploaded_at": "2026-08-23T08:49:11.285Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "8c15c6a3-0a71-4da0-a8d9-159ffaba35d4",
@@ -3606,7 +3618,7 @@
       "source_url": "https://archive.org/download/sample-WTOPWashington-reels/WTOP%20Washington3%2040.mp4",
       "uploaded_at": "2026-08-23T08:58:16Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "6586025a-8c7a-4336-b1e7-f382f6915dc9",
@@ -3617,7 +3629,7 @@
       "source_url": "https://archive.org/download/sample-KQEDSanFrancisco-reels/KQED%20SanFrancisco1%2025.avi",
       "uploaded_at": "2026-08-23T09:08:17.714Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "15304ac9-41d5-4d38-85fd-1fced3334b02",
@@ -3628,7 +3640,7 @@
       "source_url": "https://archive.org/download/sample-CBSChicago-reels/CBS%20Chicago4%2027.mkv",
       "uploaded_at": "2026-08-23T09:17:36.428Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "e4fa1917-1795-4ac9-b47d-ea922b8b3aa3",
@@ -3639,7 +3651,7 @@
       "source_url": "https://archive.org/download/sample-WGBHBoston-reels/WGBH%20Boston2%2090.mp4",
       "uploaded_at": "2026-08-23T09:27:01.142Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "28d474d1-5a9f-4a02-b141-59a59e09ad19",
@@ -3650,7 +3662,7 @@
       "source_url": "https://archive.org/download/sample-CBSChicago-reels/CBS%20Chicago4%2060.mpg",
       "uploaded_at": "2026-08-23T09:35:43.857Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "0d7c3bac-f551-40ee-a1ad-92f3150ea9a9",
@@ -3661,7 +3673,7 @@
       "source_url": "https://archive.org/download/sample-WGBHBoston-reels/WGBH%20Boston3%2084.mkv",
       "uploaded_at": "2026-08-23T09:45:35.571Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "ee9b2c8f-bdb4-4a28-b919-278f3f4f9e4a",
@@ -3672,7 +3684,7 @@
       "source_url": "https://archive.org/download/sample-WCCOMinneapolis-reels/WCCO%20Minneapolis3%2027.mkv",
       "uploaded_at": "2026-08-23T09:55:00.285Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "4b8e4deb-1a46-4215-8d9d-b3de97f48609",
@@ -3683,7 +3695,7 @@
       "source_url": "https://archive.org/download/sample-WTOPWashington-reels/WTOP%20Washington4%2077.mkv",
       "uploaded_at": "2026-08-23T10:04:23Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "ba60d895-dd6d-493b-ba36-28d44a6e07be",
@@ -3694,7 +3706,7 @@
       "source_url": "https://archive.org/download/sample-KHOUHouston-reels/KHOU%20Houston2%2089.mpg",
       "uploaded_at": "2026-08-23T10:13:31.714Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "535b54ae-c472-4756-989c-ef86112439cd",
@@ -3705,7 +3717,7 @@
       "source_url": "https://archive.org/download/sample-WTOPWashington-reels/WTOP%20Washington4%2004.mp4",
       "uploaded_at": "2026-08-23T10:23:06.428Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "9f7f52a3-ba39-4319-a859-727df6aefcb1",
@@ -3716,7 +3728,7 @@
       "source_url": "https://archive.org/download/sample-KTLALosAngeles-reels/KTLA%20LosAngeles4%2026.mp4",
       "uploaded_at": "2026-08-23T10:32:40.142Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "e81d82f0-a0f4-42f6-af92-7735d4211a91",
@@ -3727,7 +3739,7 @@
       "source_url": "https://archive.org/download/sample-WCCOMinneapolis-reels/WCCO%20Minneapolis4%2080.avi",
       "uploaded_at": "2026-08-23T10:42:18.857Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "701026c1-efca-4d7a-a9ca-d44a274c616c",
@@ -3738,7 +3750,7 @@
       "source_url": "https://archive.org/download/sample-WGBHBoston-reels/WGBH%20Boston3%2099.avi",
       "uploaded_at": "2026-08-23T10:51:27.571Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "46116e54-b952-4ba1-9975-298b16b31d09",
@@ -3749,7 +3761,7 @@
       "source_url": "https://archive.org/download/sample-NBCAtlanta-reels/NBC%20Atlanta1%2068.mkv",
       "uploaded_at": "2026-08-23T11:00:56.285Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "0be64838-d01c-4330-9070-918e617805ab",
@@ -3760,7 +3772,7 @@
       "source_url": "https://archive.org/download/sample-KQEDSanFrancisco-reels/KQED%20SanFrancisco4%2044.avi",
       "uploaded_at": "2026-08-23T11:10:10Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "639eaafa-8b76-459c-b316-123e9f41cd09",
@@ -3771,7 +3783,7 @@
       "source_url": "https://archive.org/download/sample-KTLALosAngeles-reels/KTLA%20LosAngeles4%2074.mkv",
       "uploaded_at": "2026-08-23T11:19:37.714Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "28d2316f-b69d-476f-b2bc-d73084964922",
@@ -3782,7 +3794,7 @@
       "source_url": "https://archive.org/download/sample-KTLALosAngeles-reels/KTLA%20LosAngeles3%2026.mkv",
       "uploaded_at": "2026-08-23T11:29:49.428Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "44e4bd5a-5c49-4b64-acef-ae2d17ccbc18",
@@ -3793,7 +3805,7 @@
       "source_url": "https://archive.org/download/sample-KHOUHouston-reels/KHOU%20Houston1%2040.mp4",
       "uploaded_at": "2026-08-23T11:38:58.142Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "02299c21-4e50-4abf-ba88-fa75f62183f7",
@@ -3804,7 +3816,7 @@
       "source_url": "https://archive.org/download/sample-KHOUHouston-reels/KHOU%20Houston4%2097.avi",
       "uploaded_at": "2026-08-23T11:48:02.857Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "869f5639-78d1-411e-bc7f-ecfb2af3bbde",
@@ -3815,7 +3827,7 @@
       "source_url": "https://archive.org/download/sample-WGBHBoston-reels/WGBH%20Boston4%2086.mp4",
       "uploaded_at": "2026-08-23T11:57:14.571Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "f58679d5-c6bb-4832-b388-962fc2d1b392",
@@ -3826,7 +3838,7 @@
       "source_url": "https://archive.org/download/sample-WGBHBoston-reels/WGBH%20Boston2%2042.mp4",
       "uploaded_at": "2026-08-23T12:06:59.285Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "846452a4-a07b-4a90-8e2f-6898bed11560",
@@ -3837,7 +3849,7 @@
       "source_url": "https://archive.org/download/sample-KQEDSanFrancisco-reels/KQED%20SanFrancisco3%2021.avi",
       "uploaded_at": "2026-08-23T12:16:25Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "e9c79861-c0e7-4f51-969f-c3b741b7406a",
@@ -3848,7 +3860,7 @@
       "source_url": "https://archive.org/download/sample-KTLALosAngeles-reels/KTLA%20LosAngeles4%2018.mp4",
       "uploaded_at": "2026-08-23T12:26:16.714Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "3c56d087-7cef-486e-bb24-271ab3006c3c",
@@ -3859,7 +3871,7 @@
       "source_url": "https://archive.org/download/sample-KTLALosAngeles-reels/KTLA%20LosAngeles1%2048.avi",
       "uploaded_at": "2026-08-23T12:35:12.428Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "ea0dab67-b09c-4070-984f-ff417f34c57f",
@@ -3870,7 +3882,7 @@
       "source_url": "https://archive.org/download/sample-WTOPWashington-reels/WTOP%20Washington4%2088.mkv",
       "uploaded_at": "2026-08-23T12:44:25.142Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "8112a8dd-b3a7-4653-9d04-16175f5e795c",
@@ -3881,7 +3893,7 @@
       "source_url": "https://archive.org/download/sample-WTOPWashington-reels/WTOP%20Washington1%2082.mp4",
       "uploaded_at": "2026-08-23T12:54:08.857Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "3b4ea621-84fe-4332-bf0f-2fbe68ac3e55",
@@ -3892,7 +3904,7 @@
       "source_url": "https://archive.org/download/sample-WGBHBoston-reels/WGBH%20Boston2%2022.mkv",
       "uploaded_at": "2026-08-23T13:04:07.571Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "6c8bd353-f25d-41f3-9d4f-c8ee0876e4c9",
@@ -3903,7 +3915,7 @@
       "source_url": "https://archive.org/download/sample-KQEDSanFrancisco-reels/KQED%20SanFrancisco4%2076.mp4",
       "uploaded_at": "2026-08-23T13:13:02.285Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "20511143-f2a7-4eaa-9096-a8a3afdd9f56",
@@ -3914,7 +3926,7 @@
       "source_url": "https://archive.org/download/sample-WGBHBoston-reels/WGBH%20Boston3%2032.mkv",
       "uploaded_at": "2026-08-23T13:22:56Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "d1634d6b-56e0-4b59-93ca-6ef554b2455d",
@@ -3925,7 +3937,7 @@
       "source_url": "https://archive.org/download/sample-KQEDSanFrancisco-reels/KQED%20SanFrancisco3%2062.mp4",
       "uploaded_at": "2026-08-23T13:31:57.714Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "eef1e4c4-7421-4731-8d29-cb6f0db77dd9",
@@ -3936,7 +3948,7 @@
       "source_url": "https://archive.org/download/sample-WTOPWashington-reels/WTOP%20Washington2%2055.mp4",
       "uploaded_at": "2026-08-23T13:41:17.428Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "8d93190c-9abc-442a-b25e-8750ca95ba85",
@@ -3947,7 +3959,7 @@
       "source_url": "https://archive.org/download/sample-WCCOMinneapolis-reels/WCCO%20Minneapolis1%2097.avi",
       "uploaded_at": "2026-08-23T13:50:29.142Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "72dbbb15-4b1b-49ac-a316-d1830537cb19",
@@ -3958,7 +3970,7 @@
       "source_url": "https://archive.org/download/sample-KQEDSanFrancisco-reels/KQED%20SanFrancisco3%2026.mkv",
       "uploaded_at": "2026-08-23T14:00:08.857Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG",
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG",
       "failed_checks": {
         "2026-09-27": 1
       }
@@ -3972,7 +3984,7 @@
       "source_url": "https://archive.org/download/sample-CBSChicago-reels/CBS%20Chicago2%2005.mp4",
       "uploaded_at": "2026-08-23T14:09:44.571Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "ca531eaf-a69b-49a8-a39c-92c848af57b9",
@@ -3983,7 +3995,7 @@
       "source_url": "https://archive.org/download/sample-WCCOMinneapolis-reels/WCCO%20Minneapolis4%2009.mp4",
       "uploaded_at": "2026-08-23T14:19:07.285Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "f939702d-8a77-4528-b1c3-1ce7804692eb",
@@ -3994,7 +4006,7 @@
       "source_url": "https://archive.org/download/sample-CBSChicago-reels/CBS%20Chicago1%2033.mpg",
       "uploaded_at": "2026-08-23T14:28:55Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "2dab361e-5942-4fea-abeb-71051a5c2d45",
@@ -4005,7 +4017,7 @@
       "source_url": "https://archive.org/download/sample-KQEDSanFrancisco-reels/KQED%20SanFrancisco2%2029.avi",
       "uploaded_at": "2026-08-23T14:37:57.714Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "8dbeacc0-5243-46f9-af67-bf9cce920388",
@@ -4016,7 +4028,7 @@
       "source_url": "https://archive.org/download/sample-KTLALosAngeles-reels/KTLA%20LosAngeles1%2083.mp4",
       "uploaded_at": "2026-08-23T14:47:25.428Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "2e647aa9-05eb-4cf4-a642-f108263e103b",
@@ -4027,7 +4039,7 @@
       "source_url": "https://archive.org/download/sample-NBCAtlanta-reels/NBC%20Atlanta2%2069.avi",
       "uploaded_at": "2026-08-23T14:56:24.142Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "bebe44dd-e7f3-44e2-ab0c-ed6f8fe28d56",
@@ -4038,7 +4050,7 @@
       "source_url": "https://archive.org/download/sample-ABCDenver-reels/ABC%20Denver4%2062.mpg",
       "uploaded_at": "2026-08-23T15:06:02.857Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "a6381996-654c-42e2-a3c7-511b29fedf5e",
@@ -4049,7 +4061,7 @@
       "source_url": "https://archive.org/download/sample-WGBHBoston-reels/WGBH%20Boston2%2015.avi",
       "uploaded_at": "2026-08-23T15:15:37.571Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "f05a6781-6cde-4652-9f3c-786b45615414",
@@ -4060,7 +4072,7 @@
       "source_url": "https://archive.org/download/sample-WGBHBoston-reels/WGBH%20Boston1%2025.mkv",
       "uploaded_at": "2026-08-23T15:25:31.285Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "26d9463a-cd1c-4e3a-a42d-306be85da2b2",
@@ -4071,7 +4083,7 @@
       "source_url": "https://archive.org/download/sample-NBCAtlanta-reels/NBC%20Atlanta1%2001.mp4",
       "uploaded_at": "2026-08-23T15:34:35Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "32015339-4aaf-4887-8534-e59e22465fd8",
@@ -4082,7 +4094,7 @@
       "source_url": "https://archive.org/download/sample-KTLALosAngeles-reels/KTLA%20LosAngeles3%2073.mp4",
       "uploaded_at": "2026-08-23T15:43:25.714Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "591acdff-97ec-4edc-8f94-814e87b2b6d3",
@@ -4093,7 +4105,7 @@
       "source_url": "https://archive.org/download/sample-KHOUHouston-reels/KHOU%20Houston2%2049.mp4",
       "uploaded_at": "2026-08-23T15:52:52.428Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "22a53f23-0d69-46da-b098-c317878c0c0a",
@@ -4104,7 +4116,7 @@
       "source_url": "https://archive.org/download/sample-KTLALosAngeles-reels/KTLA%20LosAngeles2%2060.mp4",
       "uploaded_at": "2026-08-23T16:02:39.142Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "f7fdde00-d0d5-4849-9c23-4198511aa8db",
@@ -4115,7 +4127,7 @@
       "source_url": "https://archive.org/download/sample-NBCAtlanta-reels/NBC%20Atlanta2%2063.mp4",
       "uploaded_at": "2026-08-23T16:11:57.857Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "0985ca9c-a5ae-49bd-8d71-beb4ad64adba",
@@ -4126,7 +4138,7 @@
       "source_url": "https://archive.org/download/sample-CBSChicago-reels/CBS%20Chicago1%2034.mpg",
       "uploaded_at": "2026-08-23T16:21:42.571Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "f7d52b97-729e-4cf3-a885-535b0227c239",
@@ -4137,7 +4149,7 @@
       "source_url": "https://archive.org/download/sample-KTLALosAngeles-reels/KTLA%20LosAngeles2%2051.mp4",
       "uploaded_at": "2026-08-23T16:31:09.285Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "bf597031-a5cc-4405-b256-33aaa79f9017",
@@ -4148,7 +4160,7 @@
       "source_url": "https://archive.org/download/sample-WCCOMinneapolis-reels/WCCO%20Minneapolis1%2074.mp4",
       "uploaded_at": "2026-08-23T16:40:45Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "92d1c6dc-0b2f-42c8-88ad-5e2c866fdb12",
@@ -4159,7 +4171,7 @@
       "source_url": "https://archive.org/download/sample-KQEDSanFrancisco-reels/KQED%20SanFrancisco3%2019.mp4",
       "uploaded_at": "2026-08-23T16:50:13.714Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "f9599417-5366-48b0-a67f-b241a50c792e",
@@ -4170,7 +4182,7 @@
       "source_url": "https://archive.org/download/sample-KTLALosAngeles-reels/KTLA%20LosAngeles2%2055.mpg",
       "uploaded_at": "2026-08-23T16:59:39.428Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "ed671d29-6a82-4b96-bc2b-f04bb20a2225",
@@ -4181,7 +4193,7 @@
       "source_url": "https://archive.org/download/sample-NBCAtlanta-reels/NBC%20Atlanta4%2072.avi",
       "uploaded_at": "2026-08-23T17:08:56.142Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "b4a0e3b1-77b4-4eea-b2e0-05a9a8ee8585",
@@ -4192,7 +4204,7 @@
       "source_url": "https://archive.org/download/sample-KTLALosAngeles-reels/KTLA%20LosAngeles4%2039.avi",
       "uploaded_at": "2026-08-23T17:18:01.857Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "d9831c96-2864-4061-bd70-da1b0a96f6bc",
@@ -4203,7 +4215,7 @@
       "source_url": "https://archive.org/download/sample-WGBHBoston-reels/WGBH%20Boston3%2050.mpg",
       "uploaded_at": "2026-08-23T17:28:07.571Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "34a296f9-44ce-495d-ad9f-bd88dff08924",
@@ -4214,7 +4226,7 @@
       "source_url": "https://archive.org/download/sample-WGBHBoston-reels/WGBH%20Boston4%2014.avi",
       "uploaded_at": "2026-08-23T17:37:04.285Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "669a8a90-ea1e-4e63-b77e-485719bf35e7",
@@ -4225,7 +4237,7 @@
       "source_url": "https://archive.org/download/sample-NBCAtlanta-reels/NBC%20Atlanta4%2031.avi",
       "uploaded_at": "2026-08-23T17:46:15Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "5025fcd7-cb0e-4d0c-8f6b-635d72e82f34",
@@ -4236,7 +4248,7 @@
       "source_url": "https://archive.org/download/sample-WCCOMinneapolis-reels/WCCO%20Minneapolis4%2039.mp4",
       "uploaded_at": "2026-08-23T17:56:06.714Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "fe804af4-b108-4942-96d8-62d90a6d50c5",
@@ -4247,7 +4259,7 @@
       "source_url": "https://archive.org/download/sample-KTLALosAngeles-reels/KTLA%20LosAngeles3%2018.avi",
       "uploaded_at": "2026-08-23T18:05:43.428Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "5fa66fb4-9260-4291-8b7f-77232d1c34f5",
@@ -4258,7 +4270,7 @@
       "source_url": "https://archive.org/download/sample-CBSChicago-reels/CBS%20Chicago4%2040.mp4",
       "uploaded_at": "2026-08-23T18:14:17.142Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "db955768-ee03-4f63-8aa4-320f3f2abee3",
@@ -4269,7 +4281,7 @@
       "source_url": "https://archive.org/download/sample-KQEDSanFrancisco-reels/KQED%20SanFrancisco3%2059.mp4",
       "uploaded_at": "2026-08-23T18:23:57.857Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "efaf1e7b-f423-4d05-9cdd-018cfe200e45",
@@ -4280,7 +4292,7 @@
       "source_url": "https://archive.org/download/sample-KTLALosAngeles-reels/KTLA%20LosAngeles3%2058.avi",
       "uploaded_at": "2026-08-23T18:33:11.571Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "4762a487-21dc-4fa8-bba3-d44159f6e6c5",
@@ -4291,7 +4303,7 @@
       "source_url": "https://archive.org/download/sample-WCCOMinneapolis-reels/WCCO%20Minneapolis2%2006.mp4",
       "uploaded_at": "2026-08-23T18:43:14.285Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "514e40a5-44e7-4a98-ace5-e92310f9f533",
@@ -4302,7 +4314,7 @@
       "source_url": "https://archive.org/download/sample-WCCOMinneapolis-reels/WCCO%20Minneapolis4%2064.avi",
       "uploaded_at": "2026-08-23T18:52:33Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "270b798c-cc22-4c4d-b4aa-7c17d09253eb",
@@ -4313,7 +4325,7 @@
       "source_url": "https://archive.org/download/sample-ABCDenver-reels/ABC%20Denver4%2049.avi",
       "uploaded_at": "2026-08-23T19:01:39.714Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "0c1f0092-242f-4f3b-9589-0fe48d8672e0",
@@ -4324,7 +4336,7 @@
       "source_url": "https://archive.org/download/sample-CBSChicago-reels/CBS%20Chicago4%2066.mkv",
       "uploaded_at": "2026-08-23T19:11:41.428Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "d67292e6-26e8-4b18-b05c-10b55bfc79a9",
@@ -4335,7 +4347,7 @@
       "source_url": "https://archive.org/download/sample-WGBHBoston-reels/WGBH%20Boston3%2032.mp4",
       "uploaded_at": "2026-08-23T19:20:48.142Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "e9db2b4e-642f-40f7-b23d-11cf61f3171d",
@@ -4346,7 +4358,7 @@
       "source_url": "https://archive.org/download/sample-WTOPWashington-reels/WTOP%20Washington2%2035.mp4",
       "uploaded_at": "2026-08-23T19:29:43.857Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "bdf2a8fd-c318-447d-bdfb-584405e805a0",
@@ -4357,7 +4369,7 @@
       "source_url": "https://archive.org/download/sample-KQEDSanFrancisco-reels/KQED%20SanFrancisco3%2058.mp4",
       "uploaded_at": "2026-08-23T19:39:45.571Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     },
     {
       "id": "82a08774-484e-44c9-80bb-f22fe1e7178c",
@@ -4368,7 +4380,7 @@
       "source_url": "https://archive.org/download/sample-KQEDSanFrancisco-reels/KQED%20SanFrancisco3%2069.avi",
       "uploaded_at": "2026-08-23T19:48:48.285Z",
       "available_now": true,
-      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      "cells": "XXXGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXGGGGGGGGG"
     }
   ]
 }

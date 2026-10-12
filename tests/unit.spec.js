@@ -5,10 +5,10 @@ import { mkdtempSync, readFileSync, readdirSync, rmSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-import { cellTitle, missingChunks, tryLink } from "../web/calendar.js";
+import { cellTitle, gapReasons, missingChunks, tryLink } from "../web/calendar.js";
 import {
-  filesCsv, formatBytes, formatDate, formatDateTime, formatMonthYear, formatRate, isStale, joinList,
-  percentSucceeded,
+  filesCsv, formatBytes, formatChecks, formatDate, formatDateTime, formatMonthYear, formatRate,
+  isStale, joinList, percentSucceeded, rateDecimals,
 } from "../web/format.js";
 import { SchemaError, seriesUrl, validateIndex, validateSeries } from "../web/schema.js";
 import { TEST_CLOCK, sample } from "./ci/routes.js";
@@ -48,6 +48,22 @@ test.describe("schema", () => {
     const secondDay = series.files.filter(f => f.uploaded_at.startsWith(series.series.uploaded_to));
     expect(secondDay.length).toBeGreaterThan(0);
     for (const file of secondDay) expect(file.cells.slice(0, 4)).toMatch(/^XXX[GR]$/);
+    // A two-day gap in the checking: X for every file, and a reason for each
+    // of the sample's grey days.
+    expect(series.gaps.map(gap => [gap.from, gap.to]))
+      .toEqual([["2026-08-23", "2026-08-24"], ["2026-09-29", "2026-09-30"]]);
+    for (const day of ["2026-09-29", "2026-09-30"]) {
+      const column = series.days.indexOf(day);
+      expect(new Set(series.files.map(f => f.cells[column]))).toEqual(new Set(["X"]));
+    }
+    for (const file of series.files) {
+      for (const [i, day] of series.days.entries()) {
+        if (file.cells[i] !== "X") continue;
+        const explained = day < file.uploaded_at.slice(0, 10)
+          || gapReasons(series.gaps, day, series.series.vantages).length > 0;
+        expect(explained, `${file.name} ${day}`).toBe(true);
+      }
+    }
     expect(series.rates.all.inconclusive).toBe(1);
     for (const key of ["all", "30d", "90d"]) expect(series.rates[key].rate).not.toBeNull();
   });
@@ -83,6 +99,14 @@ test.describe("schema", () => {
       [series, s => { s.generated_at = "2026-10-09T09:31:02+01:00"; }, validateSeries],
       [series, s => { s.days[1] = s.days[0]; }, validateSeries],
       [series, s => { s.series.uploaded_from = "2026-02-30"; }, validateSeries],
+      [series, s => { s.gaps = []; }, validateSeries],
+      [series, s => { s.gaps[0].reason = ""; }, validateSeries],
+      [series, s => { delete s.gaps[0].reason; }, validateSeries],
+      [series, s => { s.gaps[0].to = "2026-08-22"; }, validateSeries],
+      [series, s => { s.gaps[0].from = "2026-08-23T00:00:00Z"; }, validateSeries],
+      [series, s => { s.gaps[0].vantages = []; }, validateSeries],
+      [series, s => { s.gaps[0].vantages = ["mars1"]; }, validateSeries],
+      [series, s => { s.gaps = {}; }, validateSeries],
     ];
     for (const [original, mutate, validate] of breaks) {
       const value = clone(original);
@@ -90,6 +114,16 @@ test.describe("schema", () => {
       expect(() => validate(value), mutate.toString()).toThrow(SchemaError);
     }
     expect(() => validateSeries(series, "prod-canary-05")).toThrow(SchemaError);
+  });
+
+  test("gaps are optional, and may name vantages", () => {
+    const { series, index } = sample();
+    const without = clone(series);
+    delete without.gaps;
+    expect(() => validateSeries(without, index.series[0].id)).not.toThrow();
+    const scoped = clone(series);
+    scoped.gaps[0].vantages = ["lon1", "nyc1"];
+    expect(() => validateSeries(scoped, index.series[0].id)).not.toThrow();
   });
 
   test("resolves series files beside the index only", () => {
@@ -114,10 +148,46 @@ test.describe("format", () => {
   test("percentages round down, and never count inconclusive checks", () => {
     expect(percentSucceeded({ ok: 0, failed: 0, inconclusive: 5 })).toBeNull();
     expect(formatRate({ ok: 0, failed: 0, inconclusive: 5 })).toBe("no checks yet");
-    expect(formatRate({ ok: 10, failed: 0, inconclusive: 0 })).toBe("100.00%");
-    expect(formatRate({ ok: 435559, failed: 2, inconclusive: 13 })).toBe("99.99%");
-    expect(formatRate({ ok: 2, failed: 1, inconclusive: 100 })).toBe("66.66%");
-    expect(formatRate({ ok: 0, failed: 3, inconclusive: 0 })).toBe("0.00%");
+    expect(formatRate({ ok: 10, failed: 0, inconclusive: 0 })).toBe("100.0000%");
+    expect(formatRate({ ok: 2, failed: 1, inconclusive: 100 })).toBe("66.6666%");
+    expect(formatRate({ ok: 0, failed: 3, inconclusive: 0 })).toBe("0.0000%");
+    expect(formatRate({ ok: 435559, failed: 2, inconclusive: 13 })).toBe("99.9995%");
+    // Two decimals hid this entirely: it used to read 99.99%, and the page no
+    // longer asks for a width that can.
+    expect(formatRate({ ok: 435559, failed: 2, inconclusive: 13 }, 2)).toBe("99.99%");
+    // Only a record with no failures at all reaches 100.
+    expect(formatRate({ ok: 999_999, failed: 1 }, 6)).toBe("99.999900%");
+    expect(formatRate({ ok: 999_999, failed: 0 }, 6)).toBe("100.000000%");
+    // An exact figure is not floored away by a floating-point hair.
+    expect(percentSucceeded({ ok: 3, failed: 7 }, 4)).toBe("30.0000");
+    expect(percentSucceeded({ ok: 1, failed: 4 }, 4)).toBe("20.0000");
+    // Integer arithmetic past 2^53: ok * 100 * 10 ** 6 overflows a double.
+    expect(percentSucceeded({ ok: 100_000_000, failed: 1 }, 6)).toBe("99.999999");
+  });
+
+  test("decimal places follow the smallest sample behind any rate shown", () => {
+    // One check in N is worth 100/N percent; nothing finer is justified, and
+    // four is the floor whatever the sample.
+    expect(rateDecimals([])).toBe(4);
+    expect(rateDecimals([{ ok: 0, failed: 0 }])).toBe(4);
+    expect(rateDecimals([{ ok: 100, failed: 0 }])).toBe(4);
+    expect(rateDecimals([{ ok: 9_000, failed: 1_000 }])).toBe(4);
+    expect(rateDecimals([{ ok: 435_559, failed: 2 }])).toBe(4);
+    expect(rateDecimals([{ ok: 1_000_000, failed: 0 }])).toBe(4);
+    expect(rateDecimals([{ ok: 1_000_001, failed: 0 }])).toBe(5);
+    // The smallest sample sets it; windows with no conclusive checks do not.
+    expect(rateDecimals([{ ok: 20_000_000, failed: 0 }, { ok: 0, failed: 0 }, { ok: 435_559, failed: 2 }])).toBe(4);
+    // Clamped: no amount of data earns a seventh decimal.
+    expect(rateDecimals([{ ok: 10 ** 15, failed: 0 }])).toBe(6);
+    // Today's live series: its smallest window alone would ask for three.
+    expect(rateDecimals([{ ok: 444_594, failed: 2 }, { ok: 77_520, failed: 0 }])).toBe(4);
+  });
+
+  test("the counts behind a rate", () => {
+    expect(formatChecks({ ok: 0, failed: 0, inconclusive: 5 })).toBeNull();
+    expect(formatChecks({ ok: 435_559, failed: 2, inconclusive: 13 })).toBe("2 failed of 435,561 conclusive checks");
+    expect(formatChecks({ ok: 1, failed: 0 })).toBe("0 failed of 1 conclusive check");
+    expect(formatChecks({ ok: 0, failed: 1 })).toBe("1 failed of 1 conclusive check");
   });
 
   test("dates", () => {
@@ -165,6 +235,40 @@ test.describe("calendar", () => {
     const midnight = { episodes: [{ from: "2026-09-10T14:00:00Z", to: "2026-09-11T00:00:00Z", chunk: "c".repeat(64) }] };
     expect(missingChunks(midnight, "2026-09-10")).toBe(1);
     expect(missingChunks(midnight, "2026-09-11")).toBe(0);
+  });
+
+  test("a grey day before the file's own upload says so", () => {
+    const late = { uploaded_at: "2026-08-23T00:10:03Z" };
+    expect(cellTitle("X", "2026-08-22", late))
+      .toBe("2026-08-22: not yet uploaded (this file went up on 23 August 2026)");
+    // The upload day itself is a gap in the checking, not a missing file.
+    expect(cellTitle("X", "2026-08-23", late)).toBe("2026-08-23: no checks");
+    expect(cellTitle("X", "2026-08-24", late)).toBe("2026-08-24: no checks");
+    // A file with no uploaded_at is never claimed to be missing.
+    expect(cellTitle("X", "2026-08-22", {})).toBe("2026-08-22: no checks");
+  });
+
+  test("a grey day carries the exporter's reason when there is one", () => {
+    const vantages = [{ id: "lon1", label: "London" }, { id: "nyc1", label: "New York" }];
+    const gaps = [
+      { from: "2026-09-29", to: "2026-09-30", reason: "the checking computers were offline" },
+      { from: "2026-09-30", to: "2026-09-30", reason: "a routing fault", vantages: ["lon1", "nyc1"] },
+    ];
+    const title = (day, context) => cellTitle("X", day, {}, context);
+    expect(title("2026-09-29", { gaps, vantages }))
+      .toBe("2026-09-29: no checks (the checking computers were offline)");
+    // Two gaps over one day: both are reported, and one names its vantages.
+    expect(title("2026-09-30", { gaps, vantages }))
+      .toBe("2026-09-30: no checks (the checking computers were offline; London and New York: a routing fault)");
+    // Outside every gap, and with no gaps at all, the bare statement.
+    expect(title("2026-10-01", { gaps, vantages })).toBe("2026-10-01: no checks");
+    expect(title("2026-09-29", {})).toBe("2026-09-29: no checks");
+    // A vantage the series does not list falls back to its id.
+    expect(gapReasons(gaps, "2026-09-30", [])).toEqual([
+      "the checking computers were offline",
+      "lon1 and nyc1: a routing fault",
+    ]);
+    expect(gapReasons(undefined, "2026-09-30", vantages)).toEqual([]);
   });
 
   test("try links", () => {

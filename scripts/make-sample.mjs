@@ -8,6 +8,7 @@
 // What the sample contains, on purpose, so the page and tests see every state:
 //   378 files, 5 MB to 485 MB, uploaded over two days; 49 days; 3 vantages.
 //   Files uploaded on the second day have three X days at the start.
+//   A two-day gap in the checking itself, X for every file, with a reason.
 //   Two recovered episodes (R runs of 2 and 5 days) and one ongoing.
 //   Four files with failed_checks on G days, and one inconclusive check.
 // content/sample/stale/ is the same data marked stale, generated 40 hours
@@ -55,6 +56,23 @@ const FAILED_CHECKS = {
   340: { "2026-09-27": 1 },
 };
 const INCONCLUSIVE = { row: 150, day: "2026-09-18", vantage: "sgp1" };
+// Days with no checks at all, and the reason the exporter records for each.
+// The first explains the X days the second-day uploads start with; the second
+// is a gap in the middle of the record, X for every file. Reasons read as the
+// continuation of "no checks": lower case, no closing full stop.
+const GAPS = [
+  {
+    from: "2026-08-23",
+    to: "2026-08-24",
+    reason: "the files uploaded on the second day were not added to the checking schedule until the fourth day",
+  },
+  {
+    from: "2026-09-29",
+    to: "2026-09-30",
+    reason: "the checking computers were offline for a network maintenance window at our hosting provider",
+  },
+];
+const PROBE_GAP = GAPS[1];
 const SMALLEST_ROW = 7;
 const LARGEST_ROW = 222;
 
@@ -144,6 +162,11 @@ function build() {
     days.forEach((day, d) => {
       // Day-two uploads were first probed on the fourth day.
       if (!file.firstDay && d < 3) {
+        cells += "X";
+        return;
+      }
+      // Nothing was checked at all over the probe gap.
+      if (day >= PROBE_GAP.from && day <= PROBE_GAP.to) {
         cells += "X";
         return;
       }
@@ -250,6 +273,7 @@ function documents({ days, files, rates, summary }, { generatedAt, dataTo, stale
     summary,
     rates,
     days,
+    gaps: GAPS,
     files,
   };
   const index = {
